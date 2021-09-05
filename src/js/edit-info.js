@@ -40,12 +40,11 @@ const toggleEditableArea = (elements, type) => {
 
     $edit_wrapper.slideDown()
     $initial_info.slideUp()
-    $btn.addClass("hidden")
-    console.log($btn)
+    $btn.fadeOut()
   } else {
     $edit_wrapper.addClass("hidden")
 
-    $btn.removeClass("hidden")
+    $btn.fadeIn()
 
     $edit_wrapper.slideUp()
     $initial_info.slideDown()
