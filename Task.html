@@ -661,7 +661,11 @@
                   </div>
                 </div>
               </div>
-              <button type="submit" data-bs-toggle="modal" data-bs-target="#successModal" id="submitTask"
+              <!-- <button type="submit" data-bs-toggle="modal" data-bs-target="#successModal" id="submitTask"
+                class="btn-main mt-5 shadow-none">
+                Yarat
+              </button> -->
+              <button type="submit" data-bs-toggle="modal" data-bs-target="#errorModal" id="submitTask"
                 class="btn-main mt-5 shadow-none">
                 Yarat
               </button>
@@ -890,7 +894,7 @@
 
       </div>
     </div>
-    <div class="modal fade success-modal" id="successModal" role="dialog" aria-labelledby="successModalTitle"
+    <div class="modal fade result-modal" id="successModal" role="dialog" aria-labelledby="successModalTitle"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -900,14 +904,39 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="success-modal__wrapper">
-              <div class="success-modal__wrapper__img">
+            <div class="result-modal__wrapper">
+              <div class="result-modal__wrapper__img">
                 <img src="./src/img/icon/checkmark.svg" alt="We do">
               </div>
-              <p class="success-modal__wrapper__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta laboriosam incidunt aperiam non? Deserunt assumenda eius voluptates quo eveniet sunt!
+              <p class="result-modal__wrapper__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta laboriosam incidunt aperiam non?
+                Deserunt assumenda eius voluptates quo eveniet sunt!
               </p>
-              <button class="btn-main">Yönləndir</button>
+              <a href="https://" class="btn-main btn-green">Yönləndir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade result-modal" id="errorModal" role="dialog" aria-labelledby="errorModalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="result-modal__wrapper">
+              <div class="error-img">
+                <img src="./src/img/icon/20943543.jpg" alt="We do">
+              </div>
+              <p class="result-modal__wrapper__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Soluta laboriosam incidunt aperiam non?
+              </p>
+              <a href="https://" class="btn-main btn-red">Yenidən cəhd et</a>
             </div>
           </div>
         </div>

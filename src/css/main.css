@@ -1,3 +1,11 @@
+.btn-green {
+  background-color: #23b957;
+}
+
+.btn-red {
+  background-color: #ed1c24;
+}
+
 .error-wrapper, .success-wrapper {
   margin: 5px 0;
 }
@@ -19,7 +27,19 @@
   padding: 4px 7px 4px 0;
 }
 
-.success-modal__wrapper {
+.result-modal .error-img {
+  max-width: 280px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.result-modal .error-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.result-modal__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,21 +57,17 @@
   color: #2f2f30;
 }
 
-.success-modal__wrapper__img {
+.result-modal__wrapper__img {
   -webkit-filter: brightness(0) saturate(100%) invert(53%) sepia(91%) saturate(414%) hue-rotate(88deg) brightness(91%) contrast(87%);
           filter: brightness(0) saturate(100%) invert(53%) sepia(91%) saturate(414%) hue-rotate(88deg) brightness(91%) contrast(87%);
   margin-bottom: 20px;
 }
 
-.success-modal__wrapper__img img {
+.result-modal__wrapper__img img {
   width: 75px;
 }
 
-.success-modal__wrapper__text {
+.result-modal__wrapper__text {
   margin-bottom: 35px;
-}
-
-.success-modal__wrapper .btn-main {
-  background-color: #23b957;
 }
 /*# sourceMappingURL=main.css.map */

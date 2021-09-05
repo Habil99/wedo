@@ -3,6 +3,14 @@
     contrast(87%);
 }
 
+.btn-green {
+  background-color: #23b957;
+}
+
+.btn-red {
+  background-color: #ed1c24;
+}
+
 .error-wrapper {
   margin: 5px 0;
 
@@ -32,7 +40,20 @@
   }
 }
 
-.success-modal {
+.result-modal {
+
+  .error-img {
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -54,8 +75,6 @@
       margin-bottom: 35px;
     }
 
-    .btn-main {
-      background-color: #23b957;
-    }
+    
   }
 }
