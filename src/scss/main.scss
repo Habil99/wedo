@@ -1,3 +1,8 @@
+@mixin toGreen() {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(91%) saturate(414%) hue-rotate(88deg) brightness(91%)
+    contrast(87%);
+}
+
 .error-wrapper {
   margin: 5px 0;
 
@@ -23,6 +28,34 @@
       color: #23b957;
       font-size: 14px;
       padding: 4px 7px 4px 0;
+    }
+  }
+}
+
+.success-modal {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2f2f30;
+
+    &__img {
+      @include toGreen();
+      margin-bottom: 20px;
+
+      img {
+        width: 75px;
+      }
+    }
+
+    &__text {
+      margin-bottom: 35px;
+    }
+
+    .btn-main {
+      background-color: #23b957;
     }
   }
 }
