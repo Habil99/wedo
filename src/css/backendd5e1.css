@@ -1,0 +1,31 @@
+﻿.loader {
+    display:none;
+    margin: auto;
+    border: 5px solid #bcd3c7;
+    width: 16px;
+    height: 16px;
+    border-top-color: #3498db;
+    border-bottom-color: #3498db;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}
