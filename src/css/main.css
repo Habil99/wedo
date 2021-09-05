@@ -1,3 +1,15 @@
+.nice-select .list {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
 .btn-green {
   background-color: #23b957;
 }
@@ -69,5 +81,65 @@
 
 .result-modal__wrapper__text {
   margin-bottom: 35px;
+}
+
+/* Profile Section */
+.btn-edit {
+  color: #5e5ce6;
+}
+
+.edit-info {
+  position: relative;
+}
+
+.edit-info .editable-area {
+  width: 100%;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: #f6f6f9;
+  border-radius: 16px;
+  padding: 16px 81px 23px 24px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  color: #11142d;
+}
+
+@media screen and (max-width: 468px) {
+  .edit-info .editable-area {
+    padding: 16px 20px;
+  }
+}
+
+.edit-info .editable-area::-webkit-scrollbar {
+  width: 0 !important;
+  background: transparent;
+}
+
+.edit-info-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+.edit-info-buttons * {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.edit-info-buttons .cancel-action {
+  margin-left: 24px;
+  border: 1px solid #11142D;
 }
 /*# sourceMappingURL=main.css.map */
