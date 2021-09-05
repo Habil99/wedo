@@ -1,0 +1,28 @@
+.error-wrapper {
+  margin: 5px 0;
+
+  &__list {
+    padding-left: 10px;
+    list-style: none;
+
+    &__item {
+      font-size: 14px;
+      color: #ed1c24;
+      padding: 4px 7px 4px 0;
+    }
+  }
+}
+
+.success-wrapper {
+  @extend .error-wrapper;
+
+  &__list {
+    @extend .error-wrapper__list;
+
+    &__item {
+      color: #23b957;
+      font-size: 14px;
+      padding: 4px 7px 4px 0;
+    }
+  }
+}

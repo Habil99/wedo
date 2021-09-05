@@ -1,0 +1,21 @@
+.error-wrapper, .success-wrapper {
+  margin: 5px 0;
+}
+
+.error-wrapper__list, .success-wrapper__list {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.error-wrapper__list__item {
+  font-size: 14px;
+  color: #ed1c24;
+  padding: 4px 7px 4px 0;
+}
+
+.success-wrapper__list__item {
+  color: #23b957;
+  font-size: 14px;
+  padding: 4px 7px 4px 0;
+}
+/*# sourceMappingURL=main.css.map */
