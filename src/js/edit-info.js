@@ -14,10 +14,7 @@ const editable = document.querySelector(".editable-area"),
   },
   setHeight = target => {
     const $style = window.getComputedStyle(target, null);
-    // let pdTop, pdBottom, scrollHeight = 0;
-
-    // pdTop = parseInt($style.getPropertyValue("padding-top"));
-    // pdBottom = parseInt($style.getPropertyValue("padding-bottom"));
+    
     scrollHeight = target.scrollHeight
 
     target.style.height = "";
