@@ -63,4 +63,8 @@ $edit_btn.on("click", function () {
   }
 })
 
-$(".cancel-action").on("click", () => toggleEditableArea({ ...conf, $btn: $edit_btn }, "hide"))
+$(".cancel-action").on("click", (e) => {
+  e.preventDefault();
+
+  toggleEditableArea({ ...conf, $btn: $edit_btn }, "hide")
+})
