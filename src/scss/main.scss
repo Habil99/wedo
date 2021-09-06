@@ -75,7 +75,6 @@
     color: #2f2f30;
 
     &__img {
-      @include toGreen();
       margin-bottom: 20px;
 
       img {
@@ -137,7 +136,71 @@
 
     .cancel-action {
       margin-left: 24px;
-      border: 1px solid #11142D;
+      border: 1px solid #11142d;
     }
+  }
+}
+
+/* Success alert */
+
+.success-alert {
+  position: fixed;
+  z-index: 1023;
+  width: max-content;
+  max-width: 450px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 5px 40px rgba(115, 245, 79, 0.192);
+  border-radius: 16px;
+  top: 120px;
+  right: 20px;
+  border: 1px solid #23b95750;
+  transition: all .3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  transform: rotateX(10deg) scaleY(0) translateY(300px);
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0deg) scaleY(1) translateY(0);
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 26px 30px;
+    color: #11142d;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    display: flex;
+    padding: 5px 10px 5px 0;
+
+    a {
+      font-weight: 500;
+      transition: all 0.2s linear;
+
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+
+    img {
+      max-width: 25px;
+      margin-right: 10px;
+    }
+  }
+
+  .close-alert,
+  &__text a {
+    color: #5e5ce6;
+  }
+
+  .close-alert {
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 }

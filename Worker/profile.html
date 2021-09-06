@@ -313,12 +313,13 @@
               </div>
             </div>
             <div class="profile-img mt-md-0 mt-3">
-              <img src="../src/img/profile/profile5.png" alt="profile">
+              <img id="profile-img" src="../src/img/profile/profile5.png" alt="profile">
 
 
               <div class="profile-img-button">
                 <form action="#">
-                  <input type="file" id="imgUpload" class="d-none">
+                  <input type="file" id="imgUpload" accept="image/x-png,image/gif,image/jpeg,image/svg+xml"
+                    class="d-none">
                   <label for="imgUpload"><i class="fas fa-camera"></i>Şəkli dəyiş</label>
                 </form>
               </div>
@@ -446,6 +447,12 @@
               </p>
               <div class="edit-info hidden">
                 <form action="">
+                  <!-- Error will be here -->
+                  <!-- <div class="error-wrapper">
+                    <ul class="error-wrapper__list">
+                      <li class="error-wrapper__list__item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                  </div> -->
                   <textarea class="editable-area" name="" id="">
                     Доброго времени суток! Меня зовут Станислав, работаю почти во всех программах от Adobe (Photoshop, Illustrator, Muse, Premiere Pro, After Effects, Audition, Edge Animate) Создаю баннеры (как статические так и анимированные), любая ретушь фотографий, замена фона на картинках или на фото, добавление новых элементов
                   </textarea>
@@ -989,6 +996,7 @@
   <script src="/_framework/aspnetcore-browser-refresh.js"></script>
 
   <script src="../src/js/edit-info.js"></script>
+  <script src="../src/js/upload.js"></script>
 </body>
 
 </html>

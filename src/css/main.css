@@ -70,8 +70,6 @@
 }
 
 .result-modal__wrapper__img {
-  -webkit-filter: brightness(0) saturate(100%) invert(53%) sepia(91%) saturate(414%) hue-rotate(88deg) brightness(91%) contrast(87%);
-          filter: brightness(0) saturate(100%) invert(53%) sepia(91%) saturate(414%) hue-rotate(88deg) brightness(91%) contrast(87%);
   margin-bottom: 20px;
 }
 
@@ -140,6 +138,83 @@
 
 .edit-info-buttons .cancel-action {
   margin-left: 24px;
-  border: 1px solid #11142D;
+  border: 1px solid #11142d;
+}
+
+/* Success alert */
+.success-alert {
+  position: fixed;
+  z-index: 1023;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 450px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 2px 5px 40px rgba(115, 245, 79, 0.192);
+          box-shadow: 2px 5px 40px rgba(115, 245, 79, 0.192);
+  border-radius: 16px;
+  top: 120px;
+  right: 20px;
+  border: 1px solid #23b95750;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: rotateX(10deg) scaleY(0) translateY(300px);
+          transform: rotateX(10deg) scaleY(0) translateY(300px);
+}
+
+.success-alert.show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: rotateX(0deg) scaleY(1) translateY(0);
+          transform: rotateX(0deg) scaleY(1) translateY(0);
+}
+
+.success-alert__wrapper {
+  position: relative;
+  padding: 26px 30px;
+  color: #11142d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.success-alert__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px 5px 0;
+}
+
+.success-alert__text a {
+  font-weight: 500;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.success-alert__text a:hover {
+  text-decoration: underline !important;
+}
+
+.success-alert__text img {
+  max-width: 25px;
+  margin-right: 10px;
+}
+
+.success-alert .close-alert,
+.success-alert__text a {
+  color: #5e5ce6;
+}
+
+.success-alert .close-alert {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
