@@ -81,7 +81,7 @@ $(document).ready(function () {
         },
     });
 
-    $(window).on("load", function () {
+    $(function () {
         $(".owl-carousel.header-carousel").owlCarousel({
             margin: 24,
             dots: false,
