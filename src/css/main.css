@@ -423,4 +423,81 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+/* Order cards */
+.order-title {
+  margin-bottom: 32px;
+}
+
+.order-card {
+  padding: 24px 40px 24px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 5px 40px rgba(17, 20, 45, 0.08);
+          box-shadow: 2px 5px 40px rgba(17, 20, 45, 0.08);
+  border-radius: 16px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.order-card-icon {
+  min-width: 66px;
+  max-width: 66px !important;
+  height: 66px;
+  border-radius: 12px;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 576px) {
+  .order-card-icon {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    max-width: 48px !important;
+    min-width: 48px;
+    height: 48px;
+  }
+}
+
+.order-card-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
+.order-card-title {
+  color: #11142d;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 576px) {
+  .order-card-title {
+    margin-left: 70px;
+  }
+}
+
+.order-card-description {
+  color: #7c7d89;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .order-card-description {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .order-card-description {
+    margin-top: 35px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
