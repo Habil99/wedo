@@ -389,6 +389,13 @@
   border-radius: 16px;
   margin-bottom: 24px;
   position: relative;
+  border: 1px solid #fff;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+    border: 1px solid #5e5ce65d;
+  }
 
   &-icon {
     min-width: 66px;

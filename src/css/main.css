@@ -440,6 +440,15 @@
   border-radius: 16px;
   margin-bottom: 24px;
   position: relative;
+  border: 1px solid #fff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.order-card:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #5e5ce65d;
 }
 
 .order-card-icon {
