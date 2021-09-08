@@ -7,6 +7,5 @@ const texts = document.querySelectorAll("[truncate]");
 
   if (length > max) {
     text.innerHTML = value.slice(0, max) + "...";
-    console.log(length)
   }
 })

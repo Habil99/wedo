@@ -441,8 +441,8 @@
   margin-bottom: 24px;
   position: relative;
   border: 1px solid #fff;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .order-card:hover {
@@ -508,5 +508,62 @@
   .order-card-description {
     margin-top: 35px;
   }
+}
+
+/* FAQ Accordion */
+.faq-accordion .accordion-button {
+  font-weight: 600;
+  font-size: 18px;
+  color: #11142d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.faq-accordion .accordion-button.collapsed .faq-accordion-icon:after {
+  content: "+";
+}
+
+.faq-accordion .faq-accordion-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #11142d;
+  color: #fff;
+  position: relative;
+}
+
+.faq-accordion .faq-accordion-icon:after {
+  content: "-";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-size: 22px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.faq-accordion .accordion-item {
+  padding: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+.faq-accordion .accordion-body {
+  padding: 16px 46px 0 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #7c7d89;
+}
+
+.faq-accordion .accordion-body * {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
