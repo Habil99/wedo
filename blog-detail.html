@@ -285,110 +285,88 @@
   </header>
   <!-- *********************       Header  End     ************************ -->
 
-  <section class="last-post">
-    <div class="g-container">
-      <div class="row">
-        <div class="col-md-8">
-          <a href=''>
-            <div class="post-image">
-              <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="blog">
-            </div>
-          </a>
 
-        </div>
-        <div class="col-md-4">
-          <div class="post-about">
-            <div class="new-post-emblem">
-              <span class="caption">Новое</span>
-            </div>
-            <a asp-controller="Blog" asp-action="BlogDetail" asp-route-id="@Model.LastBlog.Id">
-              <h2 class="h2 mt-2">Самые необычные задания июня. Выпуск 57</h2>
-            </a>
-            <div class="content mt-4">
-              <p class="p1">
-                Аренда тренажёров, онлайн-няня и пошив манекенов собаки — что необычного заказывают на WeDo во время самоизоляции.
-              </p>
-            </div>
+  <section class="blog-details">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-10">
+          <div class="d-flex justify-content-center">
             <span class="post-date">12.06.2021</span>
           </div>
+          <h1 class="h1">Как репетитор-американец помогает освоить английский</h1>
+          <div class="post-image">
+            <img src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 offset-md-1">
+          <div class="social-medias mb-md-0 mb-4 d-flex flex-md-column justify-content-center justify-content-md-start">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="mt-md-3">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="mt-md-3">
+              <i class="fas fa-link"></i>
+
+            </a>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="content ">
+            <p class="p1 details-text">
+              Алекс Райанс преподает английский 10 лет, ищет клиентов на YouDo и уверен, что выучить язык может любой.
+              Рассказал, как учит взрослых, готовит к поездке в США и заставляет говорить даже самых стеснительных.
+               Самое сложное — когда человек совсем не знает язык, и у него мало времени на обучение.  Одна студентка
+              Алекса с YouDo уезжала в США с дочерью и ее мужем. Она вообще не говорила по-английски и хотела
+              экспресс-курс на пару месяцев. Алекс учил ее в игровой форме: «Мы играли, к примеру, в ресторан, чтобы
+              выучить разговорные выражения. Потому что она не встретит их в учебнике».  Алекс не говорит по-русски на
+              занятиях, чтобы помочь студентам преодолеть себя и начать говорить. И не наказывает за не сделанную
+              домашку: «Когда студенты не делают задания, мы просто прекращаем заниматься. Потому что так это не
+              работает».  
+              Алекс Райанс преподает английский 10 лет, ищет клиентов на YouDo и уверен, что выучить язык может любой.
+              Рассказал, как учит взрослых, готовит к поездке в США и заставляет говорить даже самых стеснительных.
+               Самое сложное — когда человек совсем не знает язык, и у него мало времени на обучение.  Одна студентка
+              Алекса с YouDo уезжала в США с дочерью и ее мужем. Она вообще не говорила по-английски и хотела
+              экспресс-курс на пару месяцев. Алекс учил ее в игровой форме: «Мы играли, к примеру, в ресторан, чтобы
+              выучить разговорные выражения. Потому что она не встретит их в учебнике».  Алекс не говорит по-русски на
+              занятиях, чтобы помочь студентам преодолеть себя и начать говорить. И не наказывает за не сделанную
+              домашку: «Когда студенты не делают задания, мы просто прекращаем заниматься. Потому что так это не
+              работает».
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news news-background">
+    <div class="container">
+      <h1 class="h1">Похожие новости</h1>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="news-item d-flex flex-column">
+            <div class="news-image">
+              <a asp-controller="Blog" asp-action="BlogDetail" asp-route-id="@blog.Id">
+                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" class="img-fluid" alt="news">
+              </a>
+            </div>
+            <div class="news-content p-4">
+              <a asp-controller="Blog" asp-action="BlogDetail" asp-route-id="@blog.Id">
+                <h3 class="h3">Играй по-взрослому</h3>
+              </a>
+              <p class="p">
+                Тебе нужна услуга? Создай задание и и получай отклик от исполнителей, готовых выполнить его!
+              </p>
+              <span class="published-date">12.06.2021</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="news">
-    <div class="g-container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="news-item news-item-banner">
-            <h1>Следите за нами</h1>
-            <div class="social-medias social mt-4">
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="ml-3">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="news-item d-flex flex-column">
-            <div class="news-image">
-              <a asp-controller="Blog" asp-action="BlogDetail" asp-route-id="@blog.Id">
-                <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" class="img-fluid" alt="news">
-              </a>
-            </div>
-            <div class="news-content p-4">
-              <a asp-controller="Blog" asp-action="BlogDetail" asp-route-id="@blog.Id">
-                <h3 class="h3">Самые необычные задания июня. Выпуск 57</h3>
-              </a>
-              <p class="p">
-                Тебе нужна услуга? Создай задание и  и получай отклик от исполнителей, готовых выполнить его!
-              </p>
-              <span class="published-date">12.06.2021</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="news-item d-flex flex-column">
-            <div class="news-image">
-              <a asp-controller="Blog" asp-action="BlogDetail" asp-route-id="@blog.Id">
-                <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" class="img-fluid" alt="news">
-              </a>
-            </div>
-            <div class="news-content p-4">
-              <a asp-controller="Blog" asp-action="BlogDetail" asp-route-id="@blog.Id">
-                <h3 class="h3">Самые необычные задания июня. Выпуск 57</h3>
-              </a>
-              <p class="p">
-                Тебе нужна услуга? Создай задание и  и получай отклик от исполнителей, готовых выполнить его!
-              </p>
-              <span class="published-date">12.06.2021</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="news-item d-flex flex-column">
-            <div class="news-image">
-              <a asp-controller="Blog" asp-action="BlogDetail" asp-route-id="@blog.Id">
-                <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" class="img-fluid" alt="news">
-              </a>
-            </div>
-            <div class="news-content p-4">
-              <a asp-controller="Blog" asp-action="BlogDetail" asp-route-id="@blog.Id">
-                <h3 class="h3">Самые необычные задания июня. Выпуск 57</h3>
-              </a>
-              <p class="p">
-                Тебе нужна услуга? Создай задание и  и получай отклик от исполнителей, готовых выполнить его!
-              </p>
-              <span class="published-date">12.06.2021</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- *********************     Footer  Start     ************************ -->
   <footer class="footer py-lg-5 py-3">
