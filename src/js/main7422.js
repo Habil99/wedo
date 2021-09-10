@@ -289,10 +289,6 @@ $(document).ready(function () {
             $('#overlay').addClass('d-none');
             $('.hidden-filter').addClass('d-block');
             $('.hidden-filter').removeClass('d-none');
-            $('.chat .left-chat').addClass('d-block');
-            $('.chat .right-chat').addClass('d-block');
-
-
         }
     }
     $(window).on('resize', jqueryResize);
@@ -310,17 +306,6 @@ $(document).ready(function () {
     //         input.attr("type", "password");
     //     }
     // });
-
-    $('.chat-item').click(function () {
-        if ($(window).width() < 768) {
-
-            $('.left-chat').addClass('d-none');
-            $('.right-chat').addClass('d-block');
-        }
-
-    })
-
-
 
     ///////////////////////////////////////////////////////
     /////////////Send message to phone/////////////////////
