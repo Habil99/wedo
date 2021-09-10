@@ -9,6 +9,17 @@
   }
 }
 
+.visually-hidden {
+  transform: scaleY(0) translateX(-10px);
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .g-container {
   width: 100%;
   max-width: calc(100% - 82px * 2);
@@ -502,6 +513,136 @@
 
     * {
       margin-bottom: 0;
+    }
+  }
+}
+
+/* Categories */
+
+.category-wrapper {
+  margin: 24px 0;
+
+  .categories-heading {
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    margin-bottom: 16px;
+
+    &-title {
+      margin-right: 12px;
+      color: #11142d;
+    }
+
+    .btn-no-style {
+      color: #7c7d89;
+    }
+
+    * {
+      margin-bottom: 0;
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  .category-list {
+    &-sub {
+      padding-left: 60px;
+      transition: all .4s ease-in-out;
+
+      &.visually-hidden {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+    }
+  }
+}
+
+
+/* Global Checkbox Style */
+
+.g-checkbox {
+  display: flex;
+  margin-bottom: 16px;
+
+  &.toggle & {
+    &__label {
+      padding-left: 50px;
+
+      &::after,
+      &::before {
+        left: 16px;
+      }
+    }
+
+    &__input:checked ~ .g-checkbox__label {
+      &::before {
+        opacity: 1;
+      }
+
+      &::after {
+        border: none;
+      }
+    }
+  }
+
+  &__label {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-left: 34px;
+    cursor: pointer;
+    user-select: none;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border-radius: 4px;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #e4e4e4;
+    }
+
+    &::after {
+      box-sizing: border-box;
+    }
+
+    &::before {
+      background: #5e5ce6 url("../img/icon/check.svg") no-repeat center center;
+      border-color: #5e5ce6;
+      opacity: 0;
+      transition: all 0.2s linear;
+    }
+  }
+
+  .chevron {
+    i {
+      transition: all 0.2s linear;
+    }
+  }
+
+  &__input {
+    &:checked + .g-checkbox__label {
+      &::before {
+        opacity: 1;
+      }
+
+      &::after {
+        border: none;
+      }
+    }
+
+    &:checked + .chevron {
+      i {
+        transform: rotate(180deg);
+        transition: all 0.2s linear;
+      }
     }
   }
 }
