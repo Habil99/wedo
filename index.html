@@ -217,13 +217,11 @@
             </div>
           </div>
         </div>
-        <!-- <a class="header-component mr-sm-3 mr-0" data-toggle="modal" data-target="#chat-modal">
-                    <i class="far fa-envelope"></i>
-                    <div class="icon1 d-flex flex-column">
-                        <img src="src/img/icon/icon-comp3.png" alt="">
-                        <img src="src/img/icon/icon-comp4.png" class="img-fluid" alt="">
-                    </div>
-                </a> -->
+        <a class="header-component mr-sm-3 mr-0" data-toggle="modal" data-target="#chat-modal">
+          <button data-bs-toggle="modal" data-bs-target="#chatModal" class="btn-no-style icon1 d-flex flex-column">
+            <img src="src/img/icon/letter.svg" alt="">
+          </button>
+        </a>
         <div class="dropdown dropdown-user">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -969,6 +967,42 @@
           <div class="modal-footer">
             <div class="redirect-register">
               Qeydiyyatdan keçmisiz ? <a style="cursor:pointer" class="close-register">Daxil olun</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal show fade chat-modal" id="chatModal" role="dialog" style="display: block;"
+      aria-labelledby="chatModalTitle" aria-hidden="false" aria-modal="true">
+      <div class="modal-dialog modal-dialog-centered" id="chatModalContent" role="document">
+        <div class="modal-content">
+          <button class="close-chat">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="modal-body">
+            <div class="app-grid">
+              <div class="app-grid-left">
+                <form action="">
+                  <div class="chat-search">
+                    <input placeholder="Поиск сообщений" type="text">
+                    <button class="btn-no-style" type="submit">
+                      <img class="img-fluid" src="./src/img/icon/search.svg" alt="">
+                    </button>
+                  </div>
+                </form>
+                <div class="chat-notifications">
+                  <div class="chat-notification">
+                    <div class="chat-notification-user">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="app-grid-chat">
+                2
+              </div>
             </div>
           </div>
         </div>

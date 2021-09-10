@@ -566,4 +566,143 @@
 .faq-accordion .accordion-body * {
   margin-bottom: 0;
 }
+
+/* Chat UI */
+.chat-modal .modal-content {
+  position: relative;
+  padding: 0;
+}
+
+.chat-modal .modal-dialog {
+  max-width: 850px;
+}
+
+.chat-modal .close-chat {
+  border: none;
+  outline: none;
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  color: #11142d;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -52px;
+}
+
+.chat-modal .app-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px 1fr;
+      grid-template-columns: 320px 1fr;
+}
+
+.chat-modal .app-grid-left {
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid rgba(164, 164, 173, 0.4);
+}
+
+.chat-modal .app-grid input::-webkit-input-placeholder,
+.chat-modal .app-grid textarea::-webkit-input-placeholder {
+  color: #b9b9c5;
+}
+
+.chat-modal .app-grid input:-ms-input-placeholder,
+.chat-modal .app-grid textarea:-ms-input-placeholder {
+  color: #b9b9c5;
+}
+
+.chat-modal .app-grid input::-ms-input-placeholder,
+.chat-modal .app-grid textarea::-ms-input-placeholder {
+  color: #b9b9c5;
+}
+
+.chat-modal .app-grid input::placeholder,
+.chat-modal .app-grid textarea::placeholder {
+  color: #b9b9c5;
+}
+
+.chat-modal .app-grid input,
+.chat-modal .app-grid textarea {
+  color: #11142d;
+}
+
+.chat-modal .app-grid input,
+.chat-modal .app-grid textarea,
+.chat-modal .app-grid input::-webkit-input-placeholder,
+.chat-modal .app-grid textarea::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.chat-modal .app-grid input,
+.chat-modal .app-grid textarea,
+.chat-modal .app-grid input:-ms-input-placeholder,
+.chat-modal .app-grid textarea:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.chat-modal .app-grid input,
+.chat-modal .app-grid textarea,
+.chat-modal .app-grid input::-ms-input-placeholder,
+.chat-modal .app-grid textarea::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.chat-modal .app-grid input,
+.chat-modal .app-grid textarea,
+.chat-modal .app-grid input::placeholder,
+.chat-modal .app-grid textarea::placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.chat-modal .app-grid .chat-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px 0 18px 24px;
+  background: #f6f6f9;
+  border-radius: 16px;
+}
+
+.chat-modal .app-grid .chat-search input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: auto !important;
+  border: none;
+  outline: none;
+  background: transparent !important;
+}
+
+.chat-modal .app-grid .chat-search button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 40px;
+}
 /*# sourceMappingURL=main.css.map */

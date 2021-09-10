@@ -505,3 +505,86 @@
     }
   }
 }
+
+/* Chat UI */
+
+.chat-modal {
+  .modal-content {
+    position: relative;
+    padding: 0;
+  }
+
+  .modal-dialog {
+    max-width: 850px;
+  }
+
+  .close-chat {
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #11142d;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -52px;
+  }
+
+  .app-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+
+    &-left {
+      padding-right: 20px;
+      margin-right: 20px;
+      border-right: 1px solid transparentize($color: #A4A4AD, $amount: 0.6);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #b9b9c5;
+    }
+
+    input,
+    textarea {
+      color: #11142d;
+    }
+
+    input,
+    textarea,
+    input::placeholder,
+    textarea::placeholder {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 160%;
+    }
+
+    .chat-search {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0 18px 24px;
+      background: #f6f6f9;
+      border-radius: 16px;
+
+      input {
+        flex-grow: 1;
+        height: auto !important;
+        border: none;
+        outline: none;
+        background: transparent !important;
+      }
+
+      button {
+        flex-shrink: 0;
+        width: 40px;
+      }
+    }
+  }
+}
