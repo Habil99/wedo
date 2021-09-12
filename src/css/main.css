@@ -571,6 +571,13 @@
 .chat-modal .modal-content {
   position: relative;
   padding: 0;
+  border: none;
+  height: calc(100vh - 150px);
+  min-height: 550px;
+}
+
+.chat-modal .modal-body {
+  height: 100%;
 }
 
 .chat-modal .modal-dialog {
@@ -599,19 +606,152 @@
   position: absolute;
   top: 0;
   right: -52px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.chat-modal .close-chat:hover {
+  background-color: #ed1c24;
+  color: #fff;
 }
 
 .chat-modal .app-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 320px 1fr;
-      grid-template-columns: 320px 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.chat-modal .app-grid .user-img img {
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
 }
 
 .chat-modal .app-grid-left {
-  padding-right: 20px;
+  position: relative;
+  width: 320px;
+  padding-right: 16px;
   margin-right: 20px;
   border-right: 1px solid rgba(164, 164, 173, 0.4);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chat-modal .app-grid-left .chat-notifications {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chat-modal .app-grid-left .chat-notifications::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-modal .app-grid-left .chat-notification {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 28px 1fr;
+      grid-template-columns: 28px 1fr;
+  grid-column-gap: 8px;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.chat-modal .app-grid-left .chat-notification:hover {
+  background-color: rgba(94, 92, 230, 0.04);
+}
+
+.chat-modal .app-grid-left .chat-notification-user {
+  width: 28px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.chat-modal .app-grid-left .chat-notification-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.chat-modal .app-grid-left .chat-notification-username {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #11142d;
+  margin-bottom: 4px;
+}
+
+.chat-modal .app-grid-left .chat-notification-userid, .chat-modal .app-grid-left .chat-notification-time {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #a4a4ad;
+}
+
+.chat-modal .app-grid-left .chat-notification-brief {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #7c7d89;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 12px;
+  margin-bottom: 8px;
+}
+
+.chat-modal .app-grid-left .chat-notification.active {
+  background: rgba(94, 92, 230, 0.09);
+}
+
+.chat-modal .app-grid-left .chat-notification.unread {
+  position: relative;
+}
+
+.chat-modal .app-grid-left .chat-notification.unread::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 9px;
+  height: 9px;
+  background-color: #5e5ce6;
+  border-radius: 50%;
+}
+
+.chat-modal .app-grid-left .chat-notification:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .chat-modal .app-grid input::-webkit-input-placeholder,
@@ -682,27 +822,192 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 18px 0 18px 24px;
   background: #f6f6f9;
   border-radius: 16px;
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 .chat-modal .app-grid .chat-search input {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   height: auto !important;
   border: none;
   outline: none;
   background: transparent !important;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
-.chat-modal .app-grid .chat-search button {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 40px;
+.chat-modal .app-grid-chat {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  letter-spacing: 0.02em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chat-modal .app-grid-chat .chat__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(164, 164, 173, 0.4);
+}
+
+.chat-modal .app-grid-chat .chat__header--userimg {
+  margin-right: 21px;
+}
+
+.chat-modal .app-grid-chat .chat__header--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.chat-modal .app-grid-chat .chat__header--username {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.chat-modal .app-grid-chat .chat__header--lastseen {
+  font-weight: 500;
+  font-size: 13px;
+  color: #a4a4ad;
+}
+
+.chat-modal .app-grid-chat .chat__header--dropdown {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.chat-modal .app-grid-chat .chat__header--dropdown button {
+  color: #7c7d89;
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.chat-modal .app-grid-chat .chat__header--dropdown .dropdown-menu {
+  border: 1px solid #a4a4ad;
+  border-radius: 12px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.chat-modal .app-grid-chat .chat__header--dropdown .dropdown-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.chat-modal .app-grid-chat .chat__header--dropdown .dropdown-menu ul button {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #11142d;
+  padding: 16px 18px;
+  width: 100%;
+  text-align: left;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+.chat-modal .app-grid-chat .chat__header--dropdown .dropdown-menu ul button:hover {
+  color: #5e5ce6;
+}
+
+.chat-modal .app-grid-chat .chat__header--dropdown .dropdown-menu ul li:not(:last-child) {
+  border-bottom: 1px solid #a4a4ad;
+}
+
+.chat-modal .app-grid-chat .chat__messages {
+  overflow-y: auto;
+  padding-right: 36px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chat-modal .app-grid-chat .chat__messages::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-modal .app-grid-chat .chat__messages__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 16px 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+  color: #11142d;
+}
+
+.chat-modal .app-grid-chat .chat__messages__alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 160%;
+  color: #7c7d89;
+  margin-bottom: 16px;
+}
+
+.chat-modal .app-grid-chat .chat__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.chat-modal .app-grid-chat .chat__message__img {
+  margin-right: 16px;
+}
+
+.chat-modal .app-grid-chat .chat__message__username {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 16px;
+}
+
+.chat-modal .app-grid-chat .chat__message__time {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a4a4ad;
+}
+
+.chat-modal .app-grid-chat .chat__message__text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #7c7d89;
+  margin-top: 6px;
 }
 /*# sourceMappingURL=main.css.map */
