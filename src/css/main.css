@@ -845,8 +845,8 @@
 
 .category-wrapper .category-list-sub {
   padding-left: 60px;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .category-wrapper .category-list-sub.visually-hidden {
@@ -936,5 +936,43 @@
           transform: rotate(180deg);
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+.language-select {
+  margin-right: 20px;
+}
+
+.language-select .nice-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  outline: none;
+}
+
+.language-select .nice-select::after {
+  right: 7px !important;
+  margin-top: -6px;
+}
+
+.language-select .nice-select .list {
+  border: none;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 5px 40px rgba(17, 20, 45, 0.08);
+          box-shadow: 2px 5px 40px rgba(17, 20, 45, 0.08);
+  border-radius: 12px;
+}
+
+.language-select .nice-select .list .option {
+  color: #11142d;
+  font-weight: 400 !important;
+  font-size: 14px;
+}
+
+.language-select .nice-select .list .option.selected, .language-select .nice-select .list .option.focus, .language-select .nice-select .list .option:hover {
+  color: #5e5ce6;
 }
 /*# sourceMappingURL=main.css.map */
