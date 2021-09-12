@@ -31,12 +31,26 @@
   width: 0;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .btn-green {
   background-color: #23b957;
 }
 
 .btn-red {
   background-color: #ed1c24;
+}
+
+.chat-modals .modal.show:nth-of-type(even) {
+  z-index: 1055 !important;
 }
 
 .error-wrapper {
@@ -714,6 +728,7 @@
         display: flex;
         padding-bottom: 16px;
         border-bottom: 1px solid transparentize($color: #a4a4ad, $amount: 0.6);
+        margin-bottom: 16px;
 
         &--userimg {
           margin-right: 21px;
@@ -793,7 +808,7 @@
         &__date {
           display: flex;
           justify-content: center;
-          margin: 16px 0;
+          margin: 0 0 16px;
           font-weight: 500;
           font-size: 13px;
           line-height: 140%;
@@ -842,6 +857,94 @@
           margin-top: 6px;
         }
       }
+
+      .chat__meessage__send {
+        margin-top: 24px;
+        max-height: calc(100% - 200px);
+      }
+
+      .chat__send {
+        &__grid {
+          display: flex;
+          align-items: center;
+        }
+
+        &__img {
+          display: flex;
+          align-items: center;
+          margin-right: 15px;
+          cursor: pointer;
+
+          i {
+            font-size: 18px;
+            color: #7c7d89;
+          }
+        }
+
+        &__field {
+          flex: 1;
+          max-height: 120px;
+          min-height: 80px;
+          height: 80px;
+          background: #f6f6f9;
+          border-radius: 16px;
+          padding: 16px 24px;
+          color: #11142d;
+          border: none;
+          outline: none;
+
+          &::placeholder {
+            color: #B9B9C5;
+          }
+        }
+
+        &__btn {
+          padding: 8px 0 8px 12px;
+        }
+      }
+    }
+  }
+}
+
+.refuse-modal {
+  .modal-dialog {
+    max-width: 560px;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #11142d;
+    margin-bottom: 16px;
+  }
+
+  &-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #7c7d89;
+  }
+
+  .modal-content {
+    padding: 16px 20px 42px 20px;
+
+    .btn-close {
+      position: absolute;
+      top: 16px;
+      right: 32px;
+      font-size: 18px;
+      font-weight: 400;
+
+      i {
+        color: #11142d;
+      }
+    }
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
   }
 }
