@@ -38,7 +38,20 @@
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
+  width: 1px !important;
+  padding: 0 !important;
+}
+
+.g-modal {
+  .btn-close {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+
+    i {
+      color: #11142d;
+    }
+  }
 }
 
 .btn-green {
@@ -527,8 +540,19 @@
     position: relative;
     padding: 0;
     border: none;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 120px);
     min-height: 550px;
+    width: 95%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      height: calc(100vh - 100px);
+      width: 98%;
+
+      .modal-body {
+        padding: 0;
+      }
+    }
   }
 
   .modal-body {
@@ -556,6 +580,16 @@
     top: 0;
     right: -52px;
     transition: all 0.2s ease;
+
+    @media screen and (max-width: 960px) {
+      right: -10px;
+      top: -30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      right: 10px;
+      top: -40px;
+    }
 
     &:hover {
       background-color: #ed1c24;
@@ -585,6 +619,13 @@
       height: 100%;
       display: flex;
       flex-direction: column;
+
+      @media screen and (max-width: 768px) {
+        border: none;
+        margin-right: 0;
+        padding-right: 0;
+        padding: 16px 24px 40px;
+      }
 
       .chat-notifications {
         width: 100%;
@@ -703,7 +744,7 @@
     .chat-search {
       display: flex;
       align-items: center;
-      padding: 18px 0 18px 24px;
+      padding: 18px 18px 18px 24px;
       background: #f6f6f9;
       border-radius: 16px;
       width: 100%;
@@ -714,15 +755,30 @@
         border: none;
         outline: none;
         background: transparent !important;
-        grid-row: 1/2;
+        flex-grow: 1;
+      }
+
+      button {
+        width: 40px;
+        flex-shrink: 0;
+      }
+    }
+
+    .chat-room {
+      letter-spacing: 0.02em;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: all 0.3s ease-in-out;
+
+      &.transition {
+        animation: fade-in 0.3s ease-in-out forwards;
       }
     }
 
     &-chat {
       flex-grow: 1;
-      letter-spacing: 0.02em;
-      display: flex;
-      flex-direction: column;
+      height: 100%;
 
       .chat__header {
         display: flex;
@@ -730,8 +786,36 @@
         border-bottom: 1px solid transparentize($color: #a4a4ad, $amount: 0.6);
         margin-bottom: 16px;
 
+        @media screen and (max-width: 768px) {
+          padding: 8px;
+        }
+
+        &--back {
+          color: #11142d;
+          margin-right: 15px;
+          align-self: center;
+          padding: 8px;
+
+          @media screen and (min-width: 768px) {
+            display: none;
+          }
+
+          @media screen and (max-width: 576px) {
+            font-size: 12px;
+          }
+        }
+
         &--userimg {
           margin-right: 21px;
+
+          @media screen and (max-width: 576px) {
+            margin-right: 6px;
+
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
         }
 
         &--info {
@@ -743,12 +827,21 @@
         &--username {
           font-weight: 500;
           font-size: 14px;
+
+          @media screen and (max-width: 576px) {
+            font-weight: 500;
+            font-size: 13px;
+          }
         }
 
         &--lastseen {
           font-weight: 500;
           font-size: 13px;
           color: #a4a4ad;
+
+          @media screen and (max-width: 576px) {
+            font-size: 12px;
+          }
         }
 
         &--dropdown {
@@ -798,6 +891,11 @@
         overflow-y: auto;
         padding-right: 36px;
         flex: 1;
+
+        @media screen and (max-width: 768px) {
+          padding: 0 26px 0 24px;
+        }
+
         -ms-overflow-style: none;
         scrollbar-width: none;
 
@@ -867,6 +965,13 @@
         &__grid {
           display: flex;
           align-items: center;
+
+          @media screen and (max-width: 768px) {
+            background-color: #f6f6f9;
+            padding: 12px;
+            border-radius: 0 0 16px 16px;
+            align-items: flex-start;
+          }
         }
 
         &__img {
@@ -893,13 +998,27 @@
           border: none;
           outline: none;
 
+          @media screen and (max-width: 768px) {
+            flex-shrink: 1;
+            width: 220px;
+            resize: none;
+            height: 72px;
+            font-weight: 500;
+            font-size: 13px;
+            padding: 0;
+          }
+
           &::placeholder {
-            color: #B9B9C5;
+            color: #b9b9c5;
           }
         }
 
         &__btn {
           padding: 8px 0 8px 12px;
+
+          @media screen and (max-width: 768px) {
+            padding-top: 0;
+          }
         }
       }
     }
@@ -946,5 +1065,105 @@
       flex-direction: column;
       text-align: center;
     }
+  }
+}
+
+/* Complaint Modal */
+
+.complaint-form {
+  &__title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-modal {
+    .modal-content {
+      padding: 26px 20px 32px;
+    }
+
+    * {
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .btn-cancel {
+    margin-right: 16px;
+    background: #f1f1f1;
+    border-radius: 12px;
+    padding: 18px 40px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #a4a4ad;
+  }
+}
+
+.g-form-group {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.g-select {
+  width: 100%;
+
+  .nice-select {
+    width: 100%;
+    background: #f6f6f9;
+    border-radius: 16px;
+    padding: 16px 24px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    height: auto;
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: #7c7d89;
+    margin-bottom: 8px;
+  }
+}
+
+.g-textarea {
+  background: #f6f6f9;
+  border-radius: 16px;
+  width: 100%;
+  padding: 18px 24px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  height: 136px;
+  max-height: 180px;
+  min-height: 50px;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: #b9b9c5;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    transform: scale(0.97 );
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }

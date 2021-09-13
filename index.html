@@ -991,7 +991,7 @@
                     </div>
                   </form>
                   <div class="chat-notifications">
-                    <div class="chat-notification active unread">
+                    <div class="chat-notification active" data-notification data-user-id="#Вася23">
                       <div class="chat-notification-user user-img">
                         <img src="./src/img/chat/user-1.svg" alt="">
                       </div>
@@ -1002,7 +1002,7 @@
                         <span class="chat-notification-time">1 сек назад</span>
                       </div>
                     </div>
-                    <div class="chat-notification unread">
+                    <div class="chat-notification unread" data-notification data-user-id="#Леонид2112">
                       <div class="chat-notification-user user-img">
                         <img src="./src/img/chat/user-2.svg" alt="">
                       </div>
@@ -1013,7 +1013,7 @@
                         <span class="chat-notification-time">1 сек назад</span>
                       </div>
                     </div>
-                    <div class="chat-notification">
+                    <div class="chat-notification" data-notification data-user-id="#WeDo55">
                       <div class="chat-notification-user user-img">
                         <img src="./src/img/chat/user-3.svg" alt="">
                       </div>
@@ -1024,7 +1024,7 @@
                         <span class="chat-notification-time">2 часа назад</span>
                       </div>
                     </div>
-                    <div class="chat-notification">
+                    <div class="chat-notification" data-notification data-user-id="#Яна44">
                       <div class="chat-notification-user user-img">
                         <img src="./src/img/chat/user-4.svg" alt="">
                       </div>
@@ -1035,7 +1035,7 @@
                         <span class="chat-notification-time">1 сек назад</span>
                       </div>
                     </div>
-                    <div class="chat-notification unread">
+                    <div class="chat-notification unread" data-notification data-user-id="#Леонид5453">
                       <div class="chat-notification-user user-img">
                         <img src="./src/img/chat/user-2.svg" alt="">
                       </div>
@@ -1049,145 +1049,208 @@
                   </div>
                 </div>
                 <div class="app-grid-chat">
-                  <div class="chat__header">
-                    <div class="chat__header--userimg user-img">
-                      <img src="./src/img/chat/user-1.svg" alt="">
-                    </div>
-                    <div class="chat__header--info">
-                      <span class="chat__header--username">Вася П.</span>
-                      <span class="chat__header--lastseen">Была в сети 10 мин. назад</span>
-                    </div>
-                    <div class="chat__header--dropdown dropdown">
-                      <button class="btn-no-style" type="button" id="chatDropdown" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  <div class="chat-room" data-chat-room-id="#Вася23">
+                    <div class="chat__header">
+                      <button class="btn-no-style chat__header--back">
+                        <i class="fas fa-chevron-left"></i>
                       </button>
-                      <div class="dropdown-menu" aria-labelledby="chatDropdown">
-                        <ul>
-                          <li>
-                            <button class="btn-no-style" data-bs-toggle="modal"
-                              data-bs-target="#complainModal">Пожаловаться</button>
-                          </li>
-                          <li>
-                            <button class="btn-no-style">Отметить как непрочитанное</button>
-                          </li>
-                          <li>
-                            <button class="btn-no-style" data-bs-toggle="modal" data-bs-target="#refuseModal">Отказаться
-                              от исполнителя</button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="chat__messages">
-                    <span class="chat__messages__date">21 июл 2021</span>
-                    <span class="chat__messages__alert">
-                      Таким образом новая модель организационной деятельности играет важную роль или вы можете отменить
-                      свое решение.
-                    </span>
-                    <div class="chat__message">
-                      <div class="chat__message__img user-img">
+                      <div class="chat__header--userimg user-img">
                         <img src="./src/img/chat/user-1.svg" alt="">
                       </div>
-                      <div class="chat__message__info">
-                        <div class="d-flex align-items-center">
-                          <span class="chat__message__username">Вася П.</span>
-                          <span class="chat__message__time">10:51</span>
-                        </div>
-                        <span class="chat__message__text">
-                          Задача организации, в особенности же сложившаяся структура организации требуют от нас
-                          анализа направлений прогрессивного развития.
-                        </span>
+                      <div class="chat__header--info">
+                        <span class="chat__header--username">Вася П.</span>
+                        <span class="chat__header--lastseen">Была в сети 10 мин. назад</span>
                       </div>
-                    </div>
-                    <div class="chat__message">
-                      <div class="chat__message__img user-img">
-                        <img src="./src/img/chat/user-3.svg" alt="">
-                      </div>
-                      <div class="chat__message__info">
-                        <div class="d-flex align-items-center">
-                          <span class="chat__message__username">Wedo</span>
-                          <span class="chat__message__time">10:51</span>
-                        </div>
-                        <span class="chat__message__text">
-                          Таким образом новая модель организационной деятельности играет важную роль
-                        </span>
-                      </div>
-                    </div>
-                    <div class="chat__message">
-                      <div class="chat__message__img user-img">
-                        <img src="./src/img/chat/user-1.svg" alt="">
-                      </div>
-                      <div class="chat__message__info">
-                        <div class="d-flex align-items-center">
-                          <span class="chat__message__username">Вася П.</span>
-                          <span class="chat__message__time">10:51</span>
-                        </div>
-                        <span class="chat__message__text">
-                          Задача организации, в особенности же сложившаяся структура организации требуют от нас
-                          анализа направлений прогрессивного развития.
-                        </span>
-                      </div>
-                    </div>
-                    <div class="chat__message">
-                      <div class="chat__message__img user-img">
-                        <img src="./src/img/chat/user-3.svg" alt="">
-                      </div>
-                      <div class="chat__message__info">
-                        <div class="d-flex align-items-center">
-                          <span class="chat__message__username">Wedo</span>
-                          <span class="chat__message__time">10:51</span>
-                        </div>
-                        <span class="chat__message__text">
-                          Таким образом новая модель организационной деятельности играет важную роль
-                        </span>
-                      </div>
-                    </div>
-                    <div class="chat__message">
-                      <div class="chat__message__img user-img">
-                        <img src="./src/img/chat/user-1.svg" alt="">
-                      </div>
-                      <div class="chat__message__info">
-                        <div class="d-flex align-items-center">
-                          <span class="chat__message__username">Вася П.</span>
-                          <span class="chat__message__time">10:51</span>
-                        </div>
-                        <span class="chat__message__text">
-                          Задача организации, в особенности же сложившаяся структура организации требуют от нас
-                          анализа направлений прогрессивного развития.
-                        </span>
-                      </div>
-                    </div>
-                    <div class="chat__message">
-                      <div class="chat__message__img user-img">
-                        <img src="./src/img/chat/user-3.svg" alt="">
-                      </div>
-                      <div class="chat__message__info">
-                        <div class="d-flex align-items-center">
-                          <span class="chat__message__username">Wedo</span>
-                          <span class="chat__message__time">10:51</span>
-                        </div>
-                        <span class="chat__message__text">
-                          Таким образом новая модель организационной деятельности играет важную роль
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="chat__meessage__send">
-                    <form action="">
-                      <div class="chat__message__action"></div>
-                      <div class="chat__send__grid">
-                        <label class="chat__send__img" for="send-img">
-                          <input class="visually-hidden" type="file" name="" id="send-img">
-                          <i class="fas fa-camera"></i>
-                        </label>
-                        <textarea class="chat__send__field" placeholder="Напишите сообщение..." name=""
-                          id=""></textarea>
-                        <button class="chat__send__btn btn-no-style">
-                          <img src="./src/img/chat/paper-plane.svg" alt="">
+                      <div class="chat__header--dropdown dropdown">
+                        <button class="btn-no-style" type="button" id="chatDropdown" data-bs-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                         </button>
+                        <div class="dropdown-menu" aria-labelledby="chatDropdown">
+                          <ul>
+                            <li>
+                              <button class="btn-no-style" data-bs-toggle="modal"
+                                data-bs-target="#complaintModal">Пожаловаться</button>
+                            </li>
+                            <li>
+                              <button class="btn-no-style">Отметить как непрочитанное</button>
+                            </li>
+                            <li>
+                              <button class="btn-no-style" data-bs-toggle="modal" data-bs-target="#refuseModal">Отказаться
+                                от исполнителя</button>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </form>
+                    </div>
+                    <div class="chat__messages">
+                      <span class="chat__messages__date">21 июл 2021</span>
+                      <span class="chat__messages__alert">
+                        Таким образом новая модель организационной деятельности играет важную роль или вы можете отменить
+                        свое решение.
+                      </span>
+                    </div>
+                    <div class="chat__meessage__send">
+                      <form action="">
+                        <div class="chat__message__action"></div>
+                        <div class="chat__send__grid">
+                          <label class="chat__send__img" for="send-img">
+                            <input class="visually-hidden" type="file" name="" id="send-img">
+                            <i class="fas fa-camera"></i>
+                          </label>
+                          <textarea class="chat__send__field" placeholder="Напишите сообщение..." name=""
+                            id=""></textarea>
+                          <button class="chat__send__btn btn-no-style">
+                            <img src="./src/img/chat/paper-plane.svg" alt="">
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="chat-room" data-chat-room-id="#Леонид2112">
+                    <div class="chat__header">
+                      <button class="btn-no-style chat__header--back">
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <div class="chat__header--userimg user-img">
+                        <img src="./src/img/chat/user-1.svg" alt="">
+                      </div>
+                      <div class="chat__header--info">
+                        <span class="chat__header--username">Вася П.</span>
+                        <span class="chat__header--lastseen">Была в сети 10 мин. назад</span>
+                      </div>
+                      <div class="chat__header--dropdown dropdown">
+                        <button class="btn-no-style" type="button" id="chatDropdown" data-bs-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="chatDropdown">
+                          <ul>
+                            <li>
+                              <button class="btn-no-style" data-bs-toggle="modal"
+                                data-bs-target="#complaintModal">Пожаловаться</button>
+                            </li>
+                            <li>
+                              <button class="btn-no-style">Отметить как непрочитанное</button>
+                            </li>
+                            <li>
+                              <button class="btn-no-style" data-bs-toggle="modal" data-bs-target="#refuseModal">Отказаться
+                                от исполнителя</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__messages">
+                      <span class="chat__messages__date">21 июл 2021</span>
+                      <span class="chat__messages__alert">
+                        Таким образом новая модель организационной деятельности играет важную роль или вы можете отменить
+                        свое решение.
+                      </span>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="./src/img/chat/user-1.svg" alt="">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Вася П.</span>
+                            <span class="chat__message__time">10:51</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Задача организации, в особенности же сложившаяся структура организации требуют от нас
+                            анализа направлений прогрессивного развития.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="./src/img/chat/user-3.svg" alt="">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo</span>
+                            <span class="chat__message__time">10:51</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Таким образом новая модель организационной деятельности играет важную роль
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="./src/img/chat/user-1.svg" alt="">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Вася П.</span>
+                            <span class="chat__message__time">10:51</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Задача организации, в особенности же сложившаяся структура организации требуют от нас
+                            анализа направлений прогрессивного развития.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="./src/img/chat/user-3.svg" alt="">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo</span>
+                            <span class="chat__message__time">10:51</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Таким образом новая модель организационной деятельности играет важную роль
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="./src/img/chat/user-1.svg" alt="">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Вася П.</span>
+                            <span class="chat__message__time">10:51</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Задача организации, в особенности же сложившаяся структура организации требуют от нас
+                            анализа направлений прогрессивного развития.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="./src/img/chat/user-3.svg" alt="">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo</span>
+                            <span class="chat__message__time">10:51</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Таким образом новая модель организационной деятельности играет важную роль
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__meessage__send">
+                      <form action="">
+                        <div class="chat__message__action"></div>
+                        <div class="chat__send__grid">
+                          <label class="chat__send__img" for="send-img">
+                            <input class="visually-hidden" type="file" name="" id="send-img">
+                            <i class="fas fa-camera"></i>
+                          </label>
+                          <textarea class="chat__send__field" placeholder="Напишите сообщение..." name=""
+                            id=""></textarea>
+                          <button class="chat__send__btn btn-no-style">
+                            <img src="./src/img/chat/paper-plane.svg" alt="">
+                          </button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1242,8 +1305,8 @@
         </div>
       </div>
 
-      <div class="modal multiple-modals fade chat-modal" id="complainForm" role="dialog" aria-labelledby="complainFormTitle"
-        aria-hidden="true">
+      <div class="modal multiple-modals fade g-modal complaint-form-modal" id="complaintModal" role="dialog"
+        aria-labelledby="complaintModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" id="" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -1252,9 +1315,27 @@
               </button>
             </div>
             <div class="modal-body">
-              <div class="d-flex align-items-center justify-content-center flex-column">
-                <p class="refuse-modal-title mb-4">Вы отказались от исполнителя</p>
-                <button class="btn-main mr-2" data-bs-dismiss="modal">Вернуться настраницу задания</button>
+              <div class="complaint-form">
+                <p class="complaint-form__title">Оставить жалобу</p>
+                <form action="" method="POST">
+                  <div class="g-form-group">
+                    <label for="type" class="g-select__label">Причина жалобы</label>
+                    <div class="g-select">
+                      <select name="" id="fraud">
+                        <option value="fraud">Мошенничесетво</option>
+                        <option value="2">lorem ipsum</option>
+                        <option value="2">dolor sit.</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="g-form-group">
+                    <textarea name="" class="g-textarea" placeholder="Оставьте сови комментарии"></textarea>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button class="btn-no-style btn-cancel">Отменить</button>
+                    <button class="btn-main">Отправить</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -1294,6 +1375,8 @@
   <script src="src/js/success-alert.js"></script>
 
   <script src="./src/js/truncate.js"></script>
+  <script src="./src/js/select.js"></script>
+  <script src="./src/js/chat.js"></script>
   <!--scripts end-->
 </body>
 
