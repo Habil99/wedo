@@ -149,10 +149,10 @@ $(document).ready(function () {
 
     $('.owl-next').html('<i class="fas fa-arrow-right"></i>')
     $('.owl-prev').html('<i class="fas fa-arrow-left"></i>')
-    $('.notification-popup .icon.isAuth').click(function () {
-        $(this).toggleClass('color-main');
-        $('.notification-area').toggleClass('d-block');
-    })
+    // $('.notification-popup .icon.isAuth').click(function () {
+    //     $(this).toggleClass('color-main');
+    //     $('.notification-area').toggleClass('d-block');
+    // })
 
     //===TESTIMONIAL CAROUSEL===//
     $(".landing-carousel").owlCarousel({
@@ -265,7 +265,7 @@ $(document).ready(function () {
         $(this).children('.fas').toggleClass('fa-angle-up');
     })
 
-    $('.notification-profile-link').removeClass();
+    // $('.notification-profile-link').removeClass();
 
     $('#filter-button').click(function () {
         $('.hidden-filter').toggleClass('d-block');

@@ -71,153 +71,109 @@
             <option value="">En</option>
           </select>
         </div>
-        <div class="notification-popup mr-sm-4 mr-2 header-component">
-          <div data-bs-toggle="modal" data-bs-target="#loginModal" class="icon d-flex flex-row">
-            <img class="img-fluid" src="src/img/icon/icon-comp.svg" alt="">
-          </div>
-          <div class="notification-area">
-            <h3 class="h3">Bildiriş</h3>
-            <div class="notifications">
-              <div class="text-center">Hal hazırda heç bir bildiriş yoxdur</div>
-              <!--<div class="notification notification-unread">
-                                <div class="row">
-                                    <div class="col-2">-->
-              <!-- <a href="profile.html" class="notification-profile-link d-block"> -->
-              <!--<div class="notification-profile">
-                                            <a href="profile.html">
-                                                <img src="~/src/img/notification/notification.png" class="profile" alt="profile">
-                                            </a>
-
-                                            <div class="notification-icon message-type">
-                                                <img src="~/src/img/notification/message.png" class="img-fluid" alt="message">
-                                            </div>
-                                        </div>-->
-              <!-- </a> -->
-              <!--</div>
-                                    <div class="col-10">
-                                        <div class="notification-content">
-                                            <p>
-                                                <span class="notification-from">
-                                                    Сара Браун
-                                                </span> sizə mesaj yolladı
-                                            </p>
-                                            <span class="notification-time">40 dəq</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="notification notification-unread">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="notification-profile">
-                                            <img src="~/src/img/notification/notification.png" class="profile" alt="profile">
-                                            <div class="notification-icon applying-type">
-                                                <img src="~/src/img/notification/chat.png" class="img-fluid" alt="message">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="notification-content">
-                                            <p>
-                                                <span class="notification-from">
-                                                    Сара Браун
-                                                </span> sizə mesaj yolladı
-                                            </p>
-                                            <span class="notification-time">40 dəq</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="notification">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="notification-profile">
-                                            <img src="~/src/img/notification/notification.png" class="profile" alt="profile">
-                                            <div class="notification-icon de-applying-type">
-                                                <img src="~/src/img/notification/chat.png" class="img-fluid" alt="message">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="notification-content">
-                                            <p>
-                                                <span class="notification-from">
-                                                    Сара Браун
-                                                </span> sizə mesaj yolladı
-                                            </p>
-                                            <span class="notification-time">40 dəq</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="notification">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="notification-profile">
-                                            <img src="~/src/img/notification/notification.png" class="profile" alt="profile">
-                                            <div class="notification-icon comment-type">
-                                                <img src="~/src/img/notification/chat.png" class="img-fluid" alt="message">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="notification-content">
-                                            <p>
-                                                <span class="notification-from">
-                                                    Сара Браун
-                                                </span> sizə mesaj yolladı
-                                            </p>
-                                            <span class="notification-time">40 dəq</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="notification">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="notification-profile">
-                                            <img src="~/src/img/notification/notification.png" class="profile" alt="profile">
-                                            <div class="notification-icon message-type">
-                                                <img src="~/src/img/notification/chat.png" class="img-fluid" alt="message">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="notification-content">
-                                            <p>
-                                                <span class="notification-from">
-                                                    Сара Браун
-                                                </span> sizə mesaj yolladı
-                                            </p>
-                                            <span class="notification-time">40 dəq</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="notification">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="nofitication-profile">
-                                            <img src="~/src/img/notification/notification1.png" alt="profile">
-                                        </div>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="notification-content">
-                                            <p>
-                                                <span class="notification-from">
-                                                   Wedo Admin
-                                                </span>
-                                                Чтобы не потерять доступ к вашему аккаунту, рекомендуем вам установить пароль. Сделать это
-                                                можно в профиле, раздел "Настройки".
-                                            </p>
-                                            <span class="notification-time">40 dəq</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
-            </div>
-            <div class="notifications-footer">
-              <button>Отметить все как прочитанное</button>
+        <div class="nav-item">
+          <div class="notification-dropdown">
+            <button id="notification-btn" type="button" class="icon d-flex flex-row btn-no-style">
+              <img class="img-fluid" src="src/img/icon/icon-comp.svg" alt="">
+            </button>
+            <div class="notification-dropdown-menu visually-hidden">
+              <div class="notification-wrapper">
+                <p class="notification-wrapper__title">Уведомления</p>
+                <div class="notifications">
+                  <div class="notification unread">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="mark-as-read">Mark all as read</button>
+              </div>
             </div>
           </div>
         </div>
@@ -1129,7 +1085,8 @@
                               <button class="btn-no-style">Отметить как непрочитанное</button>
                             </li>
                             <li>
-                              <button class="btn-no-style" data-bs-toggle="modal" data-bs-target="#refuseModal">Отказаться
+                              <button class="btn-no-style" data-bs-toggle="modal"
+                                data-bs-target="#refuseModal">Отказаться
                                 от исполнителя</button>
                             </li>
                           </ul>
@@ -1139,7 +1096,8 @@
                     <div class="chat__messages">
                       <span class="chat__messages__date">21 июл 2021</span>
                       <span class="chat__messages__alert">
-                        Таким образом новая модель организационной деятельности играет важную роль или вы можете отменить
+                        Таким образом новая модель организационной деятельности играет важную роль или вы можете
+                        отменить
                         свое решение.
                       </span>
                     </div>
@@ -1187,7 +1145,8 @@
                               <button class="btn-no-style">Отметить как непрочитанное</button>
                             </li>
                             <li>
-                              <button class="btn-no-style" data-bs-toggle="modal" data-bs-target="#refuseModal">Отказаться
+                              <button class="btn-no-style" data-bs-toggle="modal"
+                                data-bs-target="#refuseModal">Отказаться
                                 от исполнителя</button>
                             </li>
                           </ul>
@@ -1197,7 +1156,8 @@
                     <div class="chat__messages">
                       <span class="chat__messages__date">21 июл 2021</span>
                       <span class="chat__messages__alert">
-                        Таким образом новая модель организационной деятельности играет важную роль или вы можете отменить
+                        Таким образом новая модель организационной деятельности играет важную роль или вы можете
+                        отменить
                         свое решение.
                       </span>
                       <div class="chat__message">
@@ -1283,10 +1243,18 @@
                             <span class="chat__message__time">10:51</span>
                           </div>
                           <span class="chat__message__text">
-                            <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
-                            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
-                            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
-                            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+                            <img
+                              src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                              alt="">
+                            <img
+                              src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                              alt="">
+                            <img
+                              src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                              alt="">
+                            <img
+                              src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                              alt="">
                           </span>
                         </div>
                       </div>
@@ -1399,7 +1367,7 @@
       </div>
     </div>
 
-    <div class="success-alert">
+    <div class="success-alert visually-hidden">
       <div class="success-alert__wrapper">
         <button class="close-alert close">x</button>
         <div class="success-alert__text">
@@ -1414,7 +1382,7 @@
   <!-- *********************    Components  End    ************************ -->
   <!-- ******************************************************************** -->
   <!--jquery-->
-  <!-- <script src="~/src/vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="./src/vendor/jquery/jquery.min.js"></script>
      -->
 
   <!--bootstrap-->
@@ -1434,6 +1402,7 @@
   <script src="./src/js/select.js"></script>
   <script src="./src/js/chat.js"></script>
   <script src="./src/js/language-select.js"></script>
+  <script src="./src/js/notif-dropdown.js"></script>
   <!--scripts end-->
 </body>
 
