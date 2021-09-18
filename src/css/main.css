@@ -1461,6 +1461,13 @@
   position: relative;
 }
 
+@media screen and (max-width: 576px) {
+  .notification-dropdown {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 .notification-dropdown-menu {
   position: absolute;
   border: none;
@@ -1505,6 +1512,16 @@
       flex-shrink: 0;
   text-align: left;
   margin-bottom: 0;
+}
+
+.notification-dropdown .notification-wrapper__subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: #5e5ce6;
+  padding: 24px 16px 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-align: center;
 }
 
 .notification-dropdown .notifications {

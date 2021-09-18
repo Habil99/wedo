@@ -1211,6 +1211,10 @@
   letter-spacing: 0.02em;
   position: relative;
 
+  @media screen and (max-width: 576px) {
+    transform: scale(0.8);
+  }
+
   &-menu {
     position: absolute;
     border: none;
@@ -1244,6 +1248,15 @@
       flex-shrink: 0;
       text-align: left;
       margin-bottom: 0;
+    }
+
+    &__subtitle {
+      font-weight: 600;
+      font-size: 14px;
+      color: #5e5ce6;
+      padding: 24px 16px 16px;
+      flex-shrink: 0;
+      text-align: center;
     }
   }
 
