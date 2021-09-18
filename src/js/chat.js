@@ -80,13 +80,16 @@ const chat = document.getElementsByClassName("app-grid")[0],
     if (window.innerWidth < md) {
       chat_main.classList.add(hide);
       chat_left.classList.add(grow);
+      console.log("worked IF")
     } else {
       chat_main.classList.remove(hide);
       chat_left.classList.remove(grow);
+      chat_left.classList.remove(hide);
+      console.log("worked ELSE")
     }
   };
 
-window.onresize = () => resizeGrid();
+// window.onresize = () => resizeGrid();
 
 back_buttons.forEach(button => {
   button.addEventListener("click", () => backToNotifications())

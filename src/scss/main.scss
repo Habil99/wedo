@@ -953,6 +953,15 @@
           line-height: 18px;
           color: #7c7d89;
           margin-top: 6px;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+          grid-gap: 16px;
+
+          img {
+            width: 100%;
+            margin-right: 16px;
+            border-radius: 16px;
+          }
         }
       }
 
@@ -997,6 +1006,12 @@
           color: #11142d;
           border: none;
           outline: none;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
 
           @media screen and (max-width: 768px) {
             flex-shrink: 1;

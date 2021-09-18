@@ -1145,6 +1145,17 @@
   line-height: 18px;
   color: #7c7d89;
   margin-top: 6px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-gap: 16px;
+}
+
+.chat-modal .app-grid-chat .chat__message__text img {
+  width: 100%;
+  margin-right: 16px;
+  border-radius: 16px;
 }
 
 .chat-modal .app-grid-chat .chat__meessage__send {
@@ -1201,6 +1212,12 @@
   color: #11142d;
   border: none;
   outline: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chat-modal .app-grid-chat .chat__send__field::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
