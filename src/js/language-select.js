@@ -1,0 +1,1 @@
+$('#language-select select').niceSelect();
