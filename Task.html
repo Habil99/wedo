@@ -689,7 +689,7 @@
                 <img src="src/img/illustration%201.png" alt="illustration">
               </div>
             </div>
-            <button class="btn-green btn-main w-100 mt-3" data-bs-toggle="modal" data-bs-target="">Show</button>
+            <button class="btn-green btn-main w-100 mt-3" data-bs-toggle="modal" data-bs-target="#taskModal">Show</button>
           </div>
         </div>
       </div>
@@ -938,6 +938,34 @@
                 Soluta laboriosam incidunt aperiam non?
               </p>
               <a href="https://" class="btn-main btn-red">Yenidən cəhd et</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade g-modal complaint-form-modal" id="taskModal" role="dialog"
+      aria-labelledby="taskModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" id="" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button clas type="button" class="btn-close btn-no-style" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="complaint-form">
+              <p class="complaint-form__title mb-0">Оставить жалобу</p>
+              <p class="modal__text my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, laboriosam velit cum maxime eaque amet. Repudiandae provident quam molestiae iusto enim nobis vitae eligendi? Rerum.</p>
+              <form action="" method="POST">
+                <div class="g-form-group">
+                  <textarea name="" class="g-textarea" placeholder="Оставьте сови комментарии"></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button class="btn-no-style btn-cancel">Отменить</button>
+                  <button class="btn-main">Отправить</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
