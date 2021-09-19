@@ -371,7 +371,7 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .task-specs::-webkit-scrollbar {
@@ -2295,6 +2295,10 @@ header .mobile-menu {
     color: #11142d;
 }
 
+.profile-main .profile-status img {
+    max-width: 18px;
+}
+
 .news-item {
     padding: 8px 8px 24px;
     background: #ffffff;
@@ -2591,6 +2595,12 @@ header .mobile-menu {
 .worker .profile-image {
     width: 100px;
     height: 100px;
+}
+
+.job-owners-profile .profile-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 @media (max-width: 992px) {
