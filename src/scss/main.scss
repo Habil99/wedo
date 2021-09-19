@@ -1215,6 +1215,21 @@
     transform: scale(0.8);
   }
 
+  .notification-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: #ed1c24;
+    color: #fff;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
   &-menu {
     position: absolute;
     border: none;
@@ -1287,8 +1302,14 @@
     padding: 12px 16px;
     grid-column-gap: 15px;
     cursor: pointer;
-    align-items: center;
     border-radius: 16px;
+
+    &-text {
+      font-weight: 500;
+      font-size: 13px;
+      color: #11142d;
+      margin-top: 8px;
+    }
 
     &.unread {
       background: #f2f0ff;
@@ -1302,6 +1323,7 @@
       width: 48px;
       height: 48px;
       position: relative;
+      margin-top: 8px;
 
       &-main {
         width: 48px;
