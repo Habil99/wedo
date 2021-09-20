@@ -1100,8 +1100,8 @@ header .mobile-menu {
 }
 
 #hamburger-11.is-active .line:nth-child(3) {
-    -webkit-transform: translateY(-3px) rotate(-45deg);
-    transform: translateY(-3px) rotate(-45deg);
+    -webkit-transform: translateY(-2px) rotate(-45deg);
+    transform: translateY(-2px) rotate(-45deg);
     width: 25px !important;
     background: #11142d !important;
 }
@@ -3077,8 +3077,8 @@ header .mobile-menu {
     -webkit-box-shadow: 0px 0px 8px grey;
     box-shadow: 0px 0px 8px grey;
     padding: 18px 9px;
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .search-background .choises .choise-division .carousel .owl-stage-outer .owl-stage .item .choise:hover {
@@ -3669,6 +3669,7 @@ header .mobile-menu {
 @media (min-width: 280px) and (max-width: 380px) {
     .landings .landing .landing-image img {
         width: 100%;
+        max-height: 100%;
     }
 }
 
@@ -3676,6 +3677,12 @@ header .mobile-menu {
     .landings .landing .landing-image img {
         bottom: -32% !important;
         right: -13% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .landings .landing .landing-image img {
+        max-width: 100%;
     }
 }
 
