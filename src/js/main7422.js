@@ -289,6 +289,9 @@ $(document).ready(function () {
             $('#overlay').addClass('d-none');
             $('.hidden-filter').addClass('d-block');
             $('.hidden-filter').removeClass('d-none');
+        } else {
+            $('.hidden-filter').removeClass('d-block');
+            $('.hidden-filter').addClass('d-none');
         }
     }
     $(window).on('resize', jqueryResize);

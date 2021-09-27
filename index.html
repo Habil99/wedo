@@ -21,10 +21,9 @@
   <!--main css-->
   <link rel="stylesheet" href="src/css/style5d57.css" />
   <link rel="stylesheet" href="src/css/backendd5e1.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
   <script src="src/vendor/jquery/jquery.min.js"></script>
 
   <link rel="stylesheet" href="./src/css/main.css">
@@ -213,15 +212,13 @@
     <div class="mobile-menu ">
       <div class="d-flex flex-row align-items-center">
         <a href="create-task.html" class="btn-main shadow-none nav-link">Создать задание</a>
-        <div class="dropdown mr-md-4 dropdown-language d-lg-flex align-items-center">
-          <button class="btn dropdown-toggle" type="button" id="dropdownMenuMobile" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Ru
-            <i class="fas fa-angle-down ml-1"></i>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Aze</button>
-            <button class="dropdown-item" type="button">Eng</button>
+        <div class="dropdown dropdown-language d-lg-flex align-items-center">
+          <div class="language-select" id="language-select">
+            <select name="" id="">
+              <option value="">Az</option>
+              <option value="">Ru</option>
+              <option value="">En</option>
+            </select>
           </div>
         </div>
       </div>
@@ -539,7 +536,7 @@
       </div>
       <div class="g-container">
         <div class="row">
-          <div class="col-xl-6 col-lg-12 col-md-12 mt-4">
+          <div class="col-xl-6 col-lg-6 col-md-12 mt-4">
             <div class="advantage">
               <div class="row h-100">
                 <div class="col-md-6 order-md-0 order-1">

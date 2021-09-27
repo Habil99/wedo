@@ -1,8 +1,13 @@
 * {
-    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -292,12 +297,12 @@ button {
     border: none;
     font-weight: 500;
 }
-
+/* 
 @media (max-width: 768.26px) {
     .styled-input {
         height: 48px;
     }
-}
+} */
 
 .styled-input:focus {
     background: #f6f6f9;
@@ -978,18 +983,6 @@ header .mobile-menu {
     }
 }
 
-@media (max-width: 991.66px) {
-    header .mobile-menu .dropdown {
-        margin-left: 70px;
-    }
-}
-
-@media (max-width: 991.66px) and (max-width: 350px) {
-    header .mobile-menu .dropdown {
-        margin-left: 50px;
-    }
-}
-
 @media (max-width: 350px) {
     header .mobile-menu {
         width: 100%;
@@ -1182,6 +1175,7 @@ header .mobile-menu {
     line-height: 24px;
     color: #11142d;
     font-weight: 500;
+    margin: 10px 0 !important;
 }
 
 @media (max-width: 575.99px) {
@@ -1692,7 +1686,7 @@ header .mobile-menu {
 }
 
 #comment-modal textarea::-webkit-input-placeholder {
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
@@ -1702,7 +1696,7 @@ header .mobile-menu {
 }
 
 #comment-modal textarea:-ms-input-placeholder {
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
@@ -1712,7 +1706,7 @@ header .mobile-menu {
 }
 
 #comment-modal textarea::-ms-input-placeholder {
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
@@ -1722,7 +1716,7 @@ header .mobile-menu {
 }
 
 #comment-modal textarea::placeholder {
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
@@ -2622,6 +2616,7 @@ header .mobile-menu {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    border-radius: 12px
 }
 
 .worker .worker-content .content-header .last-login {
@@ -2661,6 +2656,7 @@ header .mobile-menu {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    margin-bottom: 8px;
 }
 
 .worker .worker-content .worker-specs .spec p {
@@ -3024,7 +3020,7 @@ header .mobile-menu {
 
 @media (max-width: 575.66px) {
     .search-background .choises .g-container {
-        bottom: -21%;
+        bottom: -26%;
         left: 54%;
     }
 }
@@ -5481,7 +5477,7 @@ header .mobile-menu {
 }
 
 .news-item-banner h1 {
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -6468,7 +6464,7 @@ header .mobile-menu {
 }
 
 .contact .header-content {
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -6559,4 +6555,23 @@ header .mobile-menu {
 .faq-contact .row {
     margin-top: 32px;
 }
+
+@media screen and (max-width: 600px) {
+    .header-right .language-select {
+        display: none;
+    }
+
+    .dropdown-user .icon span {
+        display: inline-block;
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .notification-dropdown-menu {
+        inset: 30px auto auto -200px !important;
+    }
+}
+
 /*# sourceMappingURL=style.css.map */
