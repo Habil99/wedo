@@ -1835,4 +1835,129 @@
 }
 
 /* Offers */
+/* Categories */
+.category-wrapper {
+  margin: 24px 0;
+}
+
+.category-wrapper .categories-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  margin-bottom: 16px;
+}
+
+.category-wrapper .categories-heading-title {
+  margin-right: 12px;
+  color: #11142d;
+}
+
+.category-wrapper .categories-heading .btn-no-style {
+  color: #7c7d89;
+}
+
+.category-wrapper .categories-heading * {
+  margin-bottom: 0;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.category-wrapper .category-list-sub {
+  padding-left: 60px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.category-wrapper .category-list-sub.visually-hidden {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  opacity: 0;
+}
+
+/* Global Checkbox Style */
+.g-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.g-checkbox.toggle .g-checkbox__label {
+  padding-left: 50px;
+}
+
+.g-checkbox.toggle .g-checkbox__label::after, .g-checkbox.toggle .g-checkbox__label::before {
+  left: 16px;
+}
+
+.g-checkbox.toggle .g-checkbox__input:checked ~ .g-checkbox__label::before {
+  opacity: 1;
+}
+
+.g-checkbox.toggle .g-checkbox__input:checked ~ .g-checkbox__label::after {
+  border: none;
+}
+
+.g-checkbox__label {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  padding-left: 34px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.g-checkbox__label::after, .g-checkbox__label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #e4e4e4;
+}
+
+.g-checkbox__label::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.g-checkbox__label::before {
+  background: #5e5ce6 url("../img/icon/check.svg") no-repeat center center;
+  border-color: #5e5ce6;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.g-checkbox .chevron i {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.g-checkbox__input:checked + .g-checkbox__label::before {
+  opacity: 1;
+}
+
+.g-checkbox__input:checked + .g-checkbox__label::after {
+  border: none;
+}
+
+.g-checkbox__input:checked + .chevron i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
 /*# sourceMappingURL=main.css.map */
