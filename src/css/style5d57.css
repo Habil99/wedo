@@ -304,6 +304,12 @@ button {
     }
 } */
 
+@media screen and (max-width: 600px) {
+    .styled-input {
+        padding-right: 44px !important;
+    }
+}
+
 .styled-input:focus {
     background: #f6f6f9;
 }
@@ -1370,6 +1376,13 @@ header .mobile-menu {
     box-shadow: none;
 }
 
+.dropdown-user .dropdown-item.active,
+.dropdown-user .dropdown-item:active,
+.dropdown-user .dropdown-item:focus {
+    background-color: #5e5ce617;
+    color: #5e5ce6;
+}
+
 .dropdown-user button .icon img:nth-child(1) {
     margin-left: 1px;
 }
@@ -1484,6 +1497,17 @@ header .mobile-menu {
     font-size: 15px;
     line-height: 140%;
     color: #808191;
+}
+
+.card-content a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    color: #808191;
+}
+
+.card-content .btn-more {
+    color: #5e5ce6;
 }
 
 .card .card-image {
@@ -2269,6 +2293,7 @@ header .mobile-menu {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .profile-main .profile-comment-sum span {
@@ -2616,7 +2641,7 @@ header .mobile-menu {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    border-radius: 12px
+    border-radius: 12px;
 }
 
 .worker .worker-content .content-header .last-login {
