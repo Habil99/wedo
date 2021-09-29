@@ -20,10 +20,10 @@ $(document).ready(function () {
             landingMaxHeight = $(this).height();
         }
     });
-        $('.landing .left-content').height(landingMaxHeight)
-        $(".card-content").height(maxHeight);
-        $(".advantage-content").height(advantageMaxHeight);
-    
+    $('.landing .left-content').height(landingMaxHeight)
+    $(".card-content").height(maxHeight);
+    $(".advantage-content").height(advantageMaxHeight);
+
 
     $('.calendar').click(function () {
         $(this).prev().focus();
@@ -331,8 +331,8 @@ $(document).ready(function () {
 
 
     $(document).on("click", "#sendEmail", function () {
-        
-         let email = $('#reg-email-input').val();
+
+        let email = $('#reg-email-input').val();
 
         if (!$("#con-reg-input").prop('checked')) {
             $('#con-reg').append("Qeydiyyat üçün Şərtlərlə tanış ol");
@@ -341,7 +341,7 @@ $(document).ready(function () {
 
             $(this).remove()
             $('#con-reg').empty()
-            $('.loader').css("display","block")
+            $('.loader').css("display", "block")
             $.ajax({
                 type: "get",
                 url: "/Account/Register/",
@@ -351,13 +351,13 @@ $(document).ready(function () {
                 success: function (res) {
                     $('.loader').css("display", "none")
                     $('#registerContent').empty();
-                   
+
                     $('#registerContent').append(res);
 
                 }
             })
         }
-        
+
     })
 
 
@@ -531,25 +531,34 @@ $(document).ready(function () {
 //    $('.otp').addClass('d-block');
 //})
 
-$(document).on("click", '.close-login',(function () {
+$(document).on("click", '.close-login', (function () {
     $('.modal-backdrop').remove()
     //$('body').removeClass('modal-open')
     $('#loginModal').modal('hide');
     $('#registerModal').modal('show');
 
-    
+
 
 
 
 }));
-$(document).on("click", '.close-register' ,(function () {
+$(document).on("click", '.close-register', (function () {
     $('.modal-backdrop').remove()
 
     //$('body').removeClass('modal-open')
     $('#registerModal').modal('hide');
     $('#loginModal').modal('show');
 
-    
-
-
 }));
+
+const send_btns = document.querySelectorAll('.chat__send__btn');
+const message_wrappers = document.querySelectorAll(".chat__messages")
+
+send_btns.forEach((btn, index) => {
+    btn.addEventListener('click', function (e) {
+        e.preventDefault()
+        
+        const wrapper = message_wrappers[index]
+        wrapper.scrollTop = wrapper.scrollHeight
+    })
+})
