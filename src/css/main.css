@@ -1982,4 +1982,124 @@
 .chat__messages:hover::-webkit-scrollbar-thumb {
   background: rgba(94, 92, 230, 0.158);
 }
+
+/* Category Page */
+.categories-section {
+  margin: 24px 84px 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  .categories-section {
+    margin: 24px 40px 80px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .categories-section {
+    margin: 24px 20px 40px;
+  }
+}
+
+.categories-section-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.02em;
+  color: #11142d;
+  margin-bottom: 82px;
+}
+
+@media screen and (max-width: 678px) {
+  .categories-section-title {
+    font-size: 28px;
+    line-height: normal;
+  }
+}
+
+.categories-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .categories-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .categories-grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.categories-grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 476px) {
+  .categories-grid-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.categories-grid-item .category-icon {
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.categories-grid-item .category-icon img {
+  width: 66px;
+  height: 66px;
+  border-radius: 12px;
+}
+
+.categories-grid-item .category-list {
+  margin-top: 22px;
+}
+
+.categories-grid-item .category-list-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #11142d;
+}
+
+.categories-grid-item .category-list-item {
+  margin-bottom: 16px;
+}
+
+.categories-grid-item .category-list-item a {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #11142d;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.categories-grid-item .category-list-item a:hover {
+  color: #5e5ce6;
+}
+
+.categories-grid-item .category-list-wrapper {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Category Page */
 /*# sourceMappingURL=main.css.map */

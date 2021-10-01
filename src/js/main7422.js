@@ -549,16 +549,44 @@ $(document).on("click", '.close-register', (function () {
     $('#registerModal').modal('hide');
     $('#loginModal').modal('show');
 
+
+
 }));
 
-const send_btns = document.querySelectorAll('.chat__send__btn');
-const message_wrappers = document.querySelectorAll(".chat__messages")
+$(".chat__send__btn").on("click", function (e) {
+    e.preventDefault();
 
-send_btns.forEach((btn, index) => {
-    btn.addEventListener('click', function (e) {
-        e.preventDefault()
-        
-        const wrapper = message_wrappers[index]
-        wrapper.scrollTop = wrapper.scrollHeight
+    $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight + 200)
+})
+
+// const send_btns = document.querySelectorAll('.chat__send__btn');
+// const message_wrappers = document.querySelectorAll(".chat__messages")
+
+// send_btns.forEach((btn, index) => {
+//     btn.addEventListener('click', function (e) {
+//         e.preventDefault()
+
+//         const wrapper = message_wrappers[index]
+//         wrapper.scrollTop = wrapper.scrollHeight
+//     })
+// })
+
+const accordion_btns = [...document.querySelectorAll('.faq-header')]
+const accordion_contents = [...document.querySelectorAll(".faq-content")]
+const accordion_icons = [...document.querySelectorAll('.faq-icon')]
+
+accordion_btns?.forEach((btn) => {
+    btn.addEventListener("click", function () {
+        accordion_btns.forEach((button, index) => {
+            if (button === btn && !button.classList.contains('collapsed')) {
+                button.classList.add("collapsed")
+                accordion_contents[index].classList.add('show')
+                accordion_icons[index].innerHTML = '-'
+            } else {
+                button.classList.remove("collapsed")
+                accordion_contents[index].classList.remove('show')
+                accordion_icons[index].innerHTML = '+'
+            }
+        })
     })
 })
