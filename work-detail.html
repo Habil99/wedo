@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Wedo" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:description" content="Wedo" />
+  <meta property="og:image" content="" />
+
+  <title>Wedo | Work</title>
+
+  <link rel="stylesheet" href="src/vendor/bootstrap/bootstrap.css" />
+  <!-- owl carousel css -->
+  <link rel="stylesheet" href="src/vendor/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="src/vendor/owl-carousel/owl.theme.default.min.css" />
+  <!--font Awesome css-->
+  <link rel="stylesheet" href="src/vendor/font-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="src/vendor/nice-select/nice-select.css" />
+  <link rel="stylesheet" href="src/vendor/datepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="src/vendor/datepicker/bootstrap-datepicker.standalone.min.css">
+  <!--main css-->
+  <link rel="stylesheet" href="src/css/style5d57.css" />
+  <link rel="stylesheet" href="src/css/backendd5e1.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <script src="src/vendor/jquery/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/reviews.css">
+
+</head>
+
+<body id="body">
+  <!-- *********************     Header  Start     ************************ -->
+  <header class="header d-flex align-items-center justify-content-between sticky-top shadow-sm">
+    <nav class="header-left d-flex align-items-center">
+      <div class="nav-button d-lg-none d-flex">
+        <div class="three col pl-0">
+          <div class="hamburger" id="hamburger-11">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="src/img/home/logo.png" alt="logo" class="logo">
+        </a>
+      </div>
+      <div class="navigation d-flex align-items-center ">
+        <a style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#loginModal"
+          class="nav-link btn-main shadow-none">İş Yarat</a>
+        <a style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#loginModal" class="nav-link">İşçi
+          ol</a>
+
+        <a class="nav-link" href="Task/FindWork.html">İş Axtar</a>
+        <a class="nav-link" href="Worker/Workers.html">İşçilər</a>
+        <a style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#loginModal" class="nav-link">Mənim
+          İşlərim</a>
+      </div>
+    </nav>
+    <div class="header-right">
+      <div class="header-actions d-flex justify-content-center align-items-center">
+        <div class="language-select" id="language-select">
+          <select name="" id="">
+            <option value="">Az</option>
+            <option value="">Ru</option>
+            <option value="">En</option>
+          </select>
+        </div>
+        <div class="nav-item">
+          <div class="notification-dropdown">
+            <button id="notification-btn" type="button" class="icon d-flex flex-row btn-no-style">
+              <img src="src/img/icon/icon-comp.svg" alt="">
+              <span class="notification-count">2</span>
+            </button>
+            <div class="notification-dropdown-menu visually-hidden">
+              <div class="notification-wrapper">
+                <p class="notification-wrapper__title">Уведомления</p>
+                <div class="notifications">
+                  <p class="notification-wrapper__subtitle">Hal-hazirda heç bir bildiriş yoxdur!</p>
+                  <div class="notification unread">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message-username">Осталось только установить пароль</span>
+                      <span class="notification-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                        cupiditate, impedit architecto tempore pariatur molestias.
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-img">
+                      <img class="notification-img-main" src="./src/img/notification/notification.png" alt="">
+                      <img class="notification-img-top" src="./src/img/notification/message.png" alt="">
+                    </div>
+                    <div class="notification-info">
+                      <span class="notification-message">
+                        <span class="notification-message-username">Сара Браун</span>
+                        отправил вам сообщение
+                      </span>
+                      <span class="notification-time">40 мин</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="mark-as-read">Mark all as read</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="header-component mr-sm-3 mr-0" data-toggle="modal" data-target="#chat-modal">
+          <button data-bs-toggle="modal" data-bs-target="#chatModal" class="btn-no-style icon1 d-flex flex-column">
+            <img src="src/img/icon/letter.svg" alt="">
+          </button>
+        </a>
+        <div class="dropdown dropdown-user">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <div class="icon d-flex flex-row align-items-center justify-content-center">
+              <span>Habil Abiyev</span>
+              <img class="img-fluid" src="src/img/icon/icon-comp5.svg" alt="">
+            </div>
+          </button>
+          <!-- <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <div class="icon d-flex flex-row align-items-center justify-content-center">
+                            <img class="img-fluid" src="src/img/icon/icon-comp5.svg" alt="">
+                        </div>
+                    </button> -->
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <button class="dropdown-item menu1 user-login mb-0" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Bход
+            </button>
+            <button class="dropdown-item menu1" data-bs-toggle="modal" data-bs-target="#registerModal">
+              Регистрация
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu ">
+      <div class="d-flex flex-row align-items-center">
+        <a href="create-task.html" class="btn-main shadow-none nav-link">Создать задание</a>
+        <div class="dropdown dropdown-language d-lg-flex align-items-center">
+          <div class="language-select" id="language-select">
+            <select name="" id="">
+              <option value="">Az</option>
+              <option value="">Ru</option>
+              <option value="">En</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <a href="landingForPerformers.html" class="nav-link px-0 mt-4">Стать исполнителем</a>
+      <a href="find-work.html" class="nav-link px-0">Найти задание</a>
+      <a href="performers.html" class="nav-link px-0">Исполнители</a>
+      <a href="contact.html" class="nav-link px-0">Частые вопросы</a>
+      <a href="contact.html" class="nav-link px-0">Контакты</a>
+      <a href="blog.html" class="nav-link px-0">Наш блог</a>
+      <a href="#" class="nav-link px-0">Политика конфиденциальности</a>
+      <a href="#" class="nav-link px-0 mb-3">Условия использования</a>
+
+      <div class="social-medias d-sm-inline">
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- *********************       Header  End     ************************ -->
+  <section class="job-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="job-informations d-flex flex-column">
+            <h2 class="h2">Paltarlar&#x131;n yuyulmas&#x131;</h2>
+            <div
+              class="post-details d-flex justify-content-md-between justify-content-start align-items-md-center align-items-start flex-md-row flex-column">
+              <div class="published-time-reviews d-flex ">
+                <div class="published-time d-flex align-items-baseline">
+                  <h6 class="caption">Dərc olundu</h6>
+                  <span class="caption ml-2">01.10.2021</span>
+                </div>
+              </div>
+
+              <div class="task-number d-md-none d-block mt-2">
+                <span class="caption">
+                  İş № 14
+                </span>
+              </div>
+
+              <div class="budget mt-md-0 mt-3">
+                <h3 class="h3">
+                  By agreement
+                </h3>
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="row">
+              <div class="col-12 pr-0">
+                <div class="shipping-infos task-specs">
+                  <div class="task-status">
+                    <p class="caption">Approved</p>
+                  </div>
+
+                  <div class="courier-service ml-3">
+                    <p class="caption">
+                      Avadanl&#x131;qlara qulluq
+                    </p>
+                  </div>
+
+                  <div class="shipping-option ml-3">
+                    <p class="caption">
+                      Ev avadanl&#x131;qlar&#x131;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 pr-sm-3 pr-0">
+                <div class="job-images-carousel mt-4">
+                  <div class="carousel owl-carousel owl-theme job-photos-carousel">
+                    <div class="item">
+                      <div class="item-img">
+                        <img class="img-fluid"
+                          src="/uploads/work/59a4ca7f-a405-42a9-9980-0727f3abb95a_photo_2021-09-27_11-29-59.jpg?v=H-hCsmpXZz1Z1RISkY2TswbjZ7YwGGqFSQs7F4SnbYE"
+                          alt="testimonial" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="no-image-uploaded">
+              <p>
+                Bir fotoşəkilin olması, ifaçıların vəzifənizi daha yaxşı qiymətləndirməsinə və
+                təkliflərini formalaşdırmasına kömək edir.
+              </p>
+            </div>
+
+            <div class="start-end-time mt-4 d-flex flex-row justify-content-sm-start justify-content-between">
+              <div class="start-time mr-sm-5 mr-0">
+                <h6 class="h6">Başlama və bitmə tarixi</h6>
+                <p>
+                  Not important
+                </p>
+              </div>
+            </div>
+
+            <div class="budget mt-4">
+              <h6>Büdcə:</h6>
+              <span class="min">
+                By agreement
+              </span>
+            </div>
+
+            <div class="row mt-md-4 mt-0">
+              <div class="col-12 d-flex flex-column">
+                <div class="address address-info order-md-0 order-1">
+                  <h6 class="d-md-block d-none">Adres:</h6>
+                  <div class="from-address d-flex">
+                    <span class="ml-3">Baki seh cavansir 6</span>
+                  </div>
+                </div>
+
+                <div class="address mt-4 order-md-1 order-0">
+                  <h6 class="d-md-none d-block">Adres:</h6>
+                  <div class="address-map mt-3">
+                    <div style="width: 100%">
+                      <iframe width="100%" height="216" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=216&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="job-description">
+              <h6 class="mt-4">
+                Təsvir:
+              </h6>
+              <p>
+                G&#xFC;nd&#x259; 3 saat yumaq imkan&#x131; olan buyursun g&#x259;lsin
+              </p>
+            </div>
+            <!-- Offers -->
+
+            <div class="offers-section">
+              <p class="section-title">Müraciətlər</p>
+              <div class="offer-card">
+                <div class="offer-card-img">
+                  <img src="/client/img/profile/profilephoto.png" alt="">
+                </div>
+                <div class="offer-card-body">
+                  <div class="offer-card-heading">
+                    <span class="office-card-user">
+                      Kanan Tapdigli
+                      <img src="/client/img/icon/Vector.svg" alt="">
+                    </span>
+                    <span class="offer-card-date">
+                      10/1/2021
+                    </span>
+                  </div>
+                  <div class="offer-rate">
+                    <span class="offer-card-rating__info">3 rəy, 3 tamamlanmış iş</span>
+                  </div>
+                  <div class="offer-card-text">
+                    Salam mv
+                  </div>
+                  <div class="offer-card-footer">
+                    <a data-bs-toggle="modal" data-bs-target="#chatModal" class="btn-write-message">Mesaj yaz</a>
+                    <form method="post" action="/az/work/confirm?workApplyId=6">
+                      <button onclick="return confirm('Əminsiniz?')" type="submit" class="btn-write-message">
+                        Qəbul et
+                      </button>
+                      <input name="__RequestVerificationToken" type="hidden"
+                        value="CfDJ8MS1UynNt5NGibg0ThT9gMHen0F83MtdkssrpqLOO34XfkVVqf85-u2Ma-EeYkk-VaQR5QuEpzOO585Pvk1Xr_5YGa3khKdgl5onpsWVy8b__MzHkZSOK7O74d_w0VKNoDjE6NUznKfSNbgUF9lzK442OSBzh2a4kY4lQNfJvFZ0FP8pmHWhhKL0XhS6DNFzMQ" />
+                    </form>
+
+                    <form method="post" action="/az/work/deleteapply?workApplyId=6">
+                      <button onclick="return confirm('Əminsiniz?')" class="btn-write-message">
+                        Sil
+                      </button>
+                      <input name="__RequestVerificationToken" type="hidden"
+                        value="CfDJ8MS1UynNt5NGibg0ThT9gMHen0F83MtdkssrpqLOO34XfkVVqf85-u2Ma-EeYkk-VaQR5QuEpzOO585Pvk1Xr_5YGa3khKdgl5onpsWVy8b__MzHkZSOK7O74d_w0VKNoDjE6NUznKfSNbgUF9lzK442OSBzh2a4kY4lQNfJvFZ0FP8pmHWhhKL0XhS6DNFzMQ" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Offers -->
+
+            <!-- Reviews -->
+
+            <div class="reviews-section">
+              <div class="make-areview">
+                <button class="btn shadow-none btn-make-review" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                  <img src="./src/img/icon/like.svg" alt="">
+                </button>
+                <span>Reviews</span>
+              </div>
+              <div class="review-card">
+                <div class="review-card-img">
+                  <a class="stretched-link" href=""></a>
+                  <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bW9kZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                    alt="">
+                </div>
+                <div class="review-card-body">
+                  <div class="review-card-user">
+                    <span class="review-card-user-name">Галина Васнецова</span>
+                    <span class="review-card-user-type">
+                      <img src="./src/img/icon/checkmark-green.svg" alt="">
+                      <span>— Исполнитель</span>
+                    </span>
+                    <span class="review-card-user-info">3 отзыва, 3 выполненных задания</span>
+                  </div>
+                  <span class="review-card-work-type">
+                    <span>Задание:</span> Водитель-курьер в СберМаркет
+                  </span>
+                  <span class="review-card-text">
+                    С Галиной приятно было работать, была четко сформулирована задача, подготовлен образец необходимого
+                    файла. Андрей всегда был на связи, в том числе и отвечал на почту. Вежливое общение. Оплата, без
+                    задержек.
+                  </span>
+                  <div class="review-card-ratings">
+                    <div class="review-card-rating">
+                      <span class="review-card-rating-type">Общая оценка:</span>
+                      <span class="review-card-rating-rate">
+                        5
+                        <img src="./src/img/icon/Union.svg" alt="">
+                      </span>
+                    </div>
+                    <div class="review-card-rating">
+                      <span class="review-card-rating-type">Качество:</span>
+                      <span class="review-card-rating-rate">
+                        5
+                        <img src="./src/img/icon/Union.svg" alt="">
+                      </span>
+                    </div>
+                    <div class="review-card-rating">
+                      <span class="review-card-rating-type">Вежливость:</span>
+                      <span class="review-card-rating-rate">
+                        5
+                        <img src="./src/img/icon/Union.svg" alt="">
+                      </span>
+                    </div>
+                    <div class="review-card-rating">
+                      <span class="review-card-rating-type">Вежливость:</span>
+                      <span class="review-card-rating-rate">
+                        5
+                        <img src="./src/img/icon/Union.svg" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-card-img">
+                  <a class="stretched-link" href=""></a>
+                  <img
+                    src="https://images.unsplash.com/photo-1582015752624-e8b1c75e3711?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1vZGVsJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                    alt="">
+                </div>
+                <div class="review-card-body">
+                  <div class="review-card-user">
+                    <span class="review-card-user-name">Веник Васильев</span>
+                    <span class="review-card-user-type">
+                      <img src="./src/img/icon/checkmark-green.svg" alt="">
+                      <span>— Заказчик</span>
+                    </span>
+                    <span class="review-card-user-info">65 отзыва, 69 выполненных задания</span>
+                  </div>
+                  <span class="review-card-work-type">
+                    <span>Задание:</span> Водитель-курьер в СберМаркет
+                  </span>
+                  <span class="review-card-text">
+                    Большое спасибо! Все точно, четко, вовремя. Высший класс!
+                  </span>
+                  <div class="review-card-ratings">
+                    <div class="review-card-rating">
+                      <span class="review-card-rating-type">Общая оценка:</span>
+                      <span class="review-card-rating-rate">
+                        5
+                        <img src="./src/img/icon/Union.svg" alt="">
+                      </span>
+                    </div>
+                    <div class="review-card-rating">
+                      <span class="review-card-rating-type">Качество:</span>
+                      <span class="review-card-rating-rate">
+                        5
+                        <img src="./src/img/icon/Union.svg" alt="">
+                      </span>
+                    </div>
+                    <div class="review-card-rating">
+                      <span class="review-card-rating-type">Вежливость:</span>
+                      <span class="review-card-rating-rate">
+                        5
+                        <img src="./src/img/icon/Union.svg" alt="">
+                      </span>
+                    </div>
+                    <div class="review-card-rating">
+                      <span class="review-card-rating-type">Вежливость:</span>
+                      <span class="review-card-rating-rate">
+                        5
+                        <img src="./src/img/icon/Union.svg" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade g-modal feedback-modal" id="feedbackModal" tabindex="-1" role="dialog"
+              aria-labelledby="feedbackModal" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="feedback-modal-title">Оцените свой опыт</span>
+                    <span class="feedback-modal-subtitle">Вы довольны выполненной работой?</span>
+                    <button class="btn-no-style btn-close">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="feedback-label">
+                        <span>Общая оценка:</span>
+                        <div class="feedback-stars">
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Общая оценка:-1" data-rate="1"
+                              data-target="overall-score">
+                            <label for="Общая оценка:-1">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Общая оценка:-2" data-rate="2"
+                              data-target="overall-score">
+                            <label for="Общая оценка:-2">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Общая оценка:-3" data-rate="3"
+                              data-target="overall-score">
+                            <label for="Общая оценка:-3">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Общая оценка:-4" data-rate="4"
+                              data-target="overall-score">
+                            <label for="Общая оценка:-4">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Общая оценка:-5" data-rate="5"
+                              data-target="overall-score">
+                            <label for="Общая оценка:-5">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="feedback-label">
+                        <span>Качество:</span>
+                        <div class="feedback-stars">
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Качество:-1" data-rate="1"
+                              data-target="quality">
+                            <label for="Качество:-1">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Качество:-2" data-rate="2"
+                              data-target="quality">
+                            <label for="Качество:-2">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Качество:-3" data-rate="3"
+                              data-target="quality">
+                            <label for="Качество:-3">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Качество:-4" data-rate="4"
+                              data-target="quality">
+                            <label for="Качество:-4">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Качество:-5" data-rate="5"
+                              data-target="quality">
+                            <label for="Качество:-5">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="feedback-label">
+                        <span>Вежливость:</span>
+                        <div class="feedback-stars">
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Вежливость:-1" data-rate="1"
+                              data-target="politeness">
+                            <label for="Вежливость:-1">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Вежливость:-2" data-rate="2"
+                              data-target="politeness">
+                            <label for="Вежливость:-2">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Вежливость:-3" data-rate="3"
+                              data-target="politeness">
+                            <label for="Вежливость:-3">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Вежливость:-4" data-rate="4"
+                              data-target="politeness">
+                            <label for="Вежливость:-4">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                          <div class="feedback-star">
+                            <input class="visually-hidden" type="checkbox" name="" id="Вежливость:-5" data-rate="5"
+                              data-target="politeness">
+                            <label for="Вежливость:-5">
+                              <i class="fas fa-star"></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <textarea name="" id="" class="g-textarea" placeholder="Напищите ваш отзыв"></textarea>
+                      <div class="d-flex mt-3 align-items-center justify-content-center flex-wrap">
+                        <button class="btn-no-style btn-cancel mb-2 mr-sm-2 mr-0">Отменить</button>
+                        <button class="btn-main mb-2" data-bs-target="#feedbackSucceeded" data-bs-toggle="modal"
+                          onclick="toggleSuccessModal(event)" data-bs-dismiss="modal">Отправить</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade feedback-modal g-modal" id="feedbackSucceeded" tabindex="-1" role="dialog"
+              aria-labelledby="feedbackSucceeded" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button class="btn-no-style btn-close">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="feedback-modal-img">
+                      <img src="./src/img/icon/feedback-success.svg" alt="">
+                    </div>
+                    <span class="feedback-modal-success-title">Спасибо за отзыв</span>
+                    <span class="feedback-modal-subtitle">Ваш отзыв был успешно отправлен!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Reviews -->
+
+          </div>
+        </div>
+        <div class="col-lg-3 d-lg-block d-none">
+          <div class="task-number ">
+            <span class="caption">
+              İş № 14
+            </span>
+          </div>
+          <div class="job-owners-profile profile-main mt-4">
+            <div class="profile-image">
+              <img
+                src="/uploads/user/c07e6ef1-d7fd-46cc-a224-fe7e65506a9d_78EF999E-202D-4CCB-AC39-8E6C2F3075DA.jpeg?v=EjNH0W7AY1dbxNgiDo13tIaiGa0-Z2J1Jd3AQDqql2Y"
+                alt="">
+            </div>
+
+            <div class="comment-profile-info d-flex align-items-center flex-row">
+              <span class="caption profile-name">Wedo Manager</span>
+              <div class="profile-status ml-2">
+                <img src="/client/img/landingIcons/task-defender.png?v=hEHZ9PdRk5SVhibgmMV_LTJBbLnGIOJzVqM-NS_89DQ"
+                  alt="defenderIcon">
+              </div>
+            </div>
+
+            <div class="city">
+              <span class="caption">Bak&#x131;</span>
+            </div>
+
+            <div class="d-flex align-items-center flex-column justify-content-center profile-comment-sum mt-2">
+              <span class="caption">0 rəy </span>
+              <span class="caption">0 bitirilmiş iş</span>
+            </div>
+
+            <div class="d-flex align-items-center flex-row mt-3">
+              <div class="profile-status ml-2 ">
+                <img src="/client/img/landingIcons/task-defender.png?v=hEHZ9PdRk5SVhibgmMV_LTJBbLnGIOJzVqM-NS_89DQ"
+                  alt="defenderIcon">
+                <span class="caption">Pasport təsdiqlənib</span>
+              </div>
+            </div>
+
+            <div class=" d-flex align-items-center flex-row mt-2">
+              <div class="profile-status ml-2">
+                <img src="/client/img/icons/confirmation.png?v=vd_7VoEkI0mcp7vDFU0Xdnb5ExGwjjUaBB86cgcR-9s"
+                  alt="defenderIcon">
+                <span class="caption">Telefon təsdiqləndi</span>
+              </div>
+            </div>
+          </div>
+          <!-- <button class="btn-basic" disabled>Заказ завершен</button> -->
+          <!-- if job owners -->
+
+          <a class="btn-basic border shadow-none" href="/az/work/update/14">
+            Redaktə edin
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- *********************     Footer  Start     ************************ -->
+  <footer class="footer py-lg-5 py-3">
+    <div class="g-container">
+      <div class="row justify-content-lg-start justify-content-center">
+        <div class="col-lg-3 col-md-6 order-lg-1 order-md-4 order-5 my-lg-0 my-sm-5  my-4  my-3 my-3 text-md-left text-sm-center  d-flex flex-sm-column
+                   justify-content-sm-center align-items-md-baseline justify-content-between align-items-center">
+          <div class="footer-logo d-sm-inline d-none">
+            <img src="src/img/home/logo.png" alt="logo">
+          </div>
+          <p class="footer-paragraph mt-4 d-sm-inline d-none">Rahat və əlverişli servis xidməti.</p>
+          <p class="footer-paragraph mt-sm-4 mt-0 copyright ">
+            Wedo Copyright 2021.
+            All Right Reserved Wedo
+          </p>
+
+        </div>
+        <div
+          class="col-lg-3 col-md-6 order-lg-5 order-md-4 order-2 my-lg-0 my-sm-5  my-4 d-sm-none d-block text-md-left text-center">
+          <div class="footer-logo">
+            <img src="src/img/home/logo.png" alt="logo">
+          </div>
+          <p class="footer-paragraph mt-4">Rahat və əlverişli servis xidməti.</p>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 order-lg-2 order-md-3 order-4 d-flex flex-column my-lg-0 mt-md-5 mb-sm-5 mt-sm-1  text-md-left text-center">
+          <a style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#loginModal" class="footer-link">İşçi ol</a>
+
+          <a class="footer-link mt-4" href="Contact-2.html">Ən çox verilən suallar</a>
+          <a class="footer-link mt-4" href="Contact-2.html">Bizimlə Əlaqə</a>
+          <a class="footer-link mt-4" href="Blog-2.html">Bloglar</a>
+          <div class="social-medias social-md mt-4 d-sm-inline d-md-none d-block">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 order-lg-3 order-3 d-flex flex-column my-lg-0 mt-sm-4  my-4 text-md-left text-center">
+          <a class="footer-link" href="Blog-2.html">Gizlilik Siyasəti</a>
+          <a class="footer-link mt-4" href="Condition.html">İstifadə qaydaları</a>
+          <div class="social-medias social mt-4">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 order-lg-4 order-1 my-lg-0 my-sm-5  my-4 ">
+          <div class="subscribe-area">
+            <p class="p form-content">Ən son xəbərləri qaçırmamaq üçün abunə olun!</p>
+            <form action="#" id="subscribe-form" class="d-flex align-items-center">
+              <input type="text" id="subscribe" placeholder="Sizin epoçtunuz" class="pl-2 border-0">
+              <button type="submit">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- *********************       Footer  End     ************************ -->
+  <!-- *********************       Components  Start     ************************ -->
+
+  <div class="components">
+
+
+
+    <!-- Modal -->
+    <div class="modal fade user-modal" id="loginModal" role="dialog" aria-labelledby="loginModalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h2 class="h2 text-center">Daxil ol</h2>
+          </div>
+          <div class="modal-body">
+
+            <form action="#">
+              <div class="form-group">
+                <label for="phone-email">E-po&#xE7;t</label>
+                <input type="text" class="form-control styled-input" id="log-phone">
+              </div>
+              <div class="form-group">
+                <label for="password">&#x15E;ifr&#x259;</label>
+                <input type="password" class="form-control styled-input" id="log-password">
+              </div>
+              <div class="error-wrapper d-none">
+                <ul class="error-wrapper__list">
+                  <li class="error-wrapper__list__item">
+                    <span>Daxil etdiyiniz po&#xE7;t &#xFC;nvan&#x131; v&#x259; ya &#x15F;ifr&#x259;
+                      yaln&#x131;&#x15F;d&#x131;r</span>
+                  </li>
+                </ul>
+              </div>
+              <a style="cursor:pointer;" class="btn btn-main w-100 shadow-none" id="login-btn">Daxil ol</a>
+              <div id="log-error" class="text-center">
+                <span class="text-danger"></span>
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <div class="redirect-register">
+              Qeydiyyatdan ke&#xE7;m&#x259;misiniz ? <a style="cursor:pointer" class="close-login">
+                &#x130;ndi qeydiyyatdan ke&#xE7;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade user-modal" id="registerModal" role="dialog" aria-labelledby="loginModalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" id="registerContent" role="document">
+        <div class="modal-content register-body d-block">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="h2 text-center">Qeydiyyat</h2>
+          </div>
+          <div class="modal-body ">
+            <form>
+              <div class="form-group">
+                <label for="phone-email">E-po&#xE7;t</label>
+                <input type="text" class="form-control styled-input" id="reg-email-input">
+              </div>
+              <div class="mb-3 text-center">
+              </div>
+              <a id="sendEmail" class="btn btn-main w-100 shadow-none register-button" style="cursor: pointer">
+                Kodu yolla
+              </a>
+              <div class="text-center">
+                <p class="text-danger mt-3 d-none" id="privacy-reg">Qeydiyyat &#xFC;&#xE7;&#xFC;n
+                  &#x15F;&#x259;rtl&#x259;rl&#x259; tan&#x131;&#x15F; ol</p>
+                <p class="text-danger mt-3 d-none" id="con-reg">Daxil edil&#x259;n po&#xE7;t-&#xFC;nvan&#x131;
+                  art&#x131;q qeydiyyatdan ke&#xE7;mi&#x15F;dir</p>
+                <p id="wrong-email" class="d-none mt-3 text-danger">Daxil edil&#x259;n po&#xE7;t-&#xFC;nvan&#x131;
+                  d&#xFC;zg&#xFC;n formatda deyil</p>
+              </div>
+              <div class="loader"></div>
+              <div class="form-check form-check-inline m-0 styled-checkbox mt-5">
+                <input class="form-check-input provision-input" type="checkbox" name="provisionArea" id="con-reg-input"
+                  value="option1" checked>
+                <label class="form-check-label radio-active left-radius" for="inlineRadio1">
+                  Sizin &#x15E;&#x259;rtl&#x259;rl&#x259; raz&#x131;yam
+                </label>
+
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="redirect-register">
+              Qeydiyyatdan ke&#xE7;misiz ? <a style="cursor:pointer" class="close-register">Daxil ol</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-modals">
+      <input type="hidden" class="chat-hub-item" value="5" />
+      <input type="hidden" class="chat-hub-item" value="4" />
+      <div class="modal multiple-modals fade chat-modal" id="chatModal" role="dialog" aria-labelledby="chatModalTitle"
+        aria-hidden="true" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered" id="chatModalContent" role="document">
+          <div class="modal-content">
+            <button class="close-chat" data-bs-dismiss="modal">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+              <div class="app-grid">
+                <div class="app-grid-left">
+                  <form action="">
+                    <div class="chat-search sticky-top">
+                      <input placeholder="Mesaj axtar..." type="text">
+                      <button class="btn-no-style" type="submit">
+                        <img class="img-fluid" src="/client/img/chat/search.svg" alt="">
+                      </button>
+                    </div>
+                  </form>
+                  <div class="chat-notifications">
+                    <div class="chat-notification" data-notification data-user-id="5">
+                      <div class="chat-notification-user user-img">
+                        <img
+                          src="/uploads/user/087892ac-66e0-46db-a8e2-8f3705672072_T02FDGMBB-U019MBGPWSX-e901f3c4db25-512.png">
+                      </div>
+                      <div class="chat-notification-info">
+                        <span class="chat-notification-username">Kanan Tapdigli</span>
+                        <span class="chat-notification-brief">Salam necesen</span>
+                        <span class="chat-notification-time">12:05 PM</span>
+                      </div>
+                    </div>
+                    <div class="chat-notification" data-notification data-user-id="4">
+                      <div class="chat-notification-user user-img">
+                        <img src="/client/img/profile/profilephoto.png">
+                      </div>
+                      <div class="chat-notification-info">
+                        <span class="chat-notification-username">Kanan Tapdigli</span>
+                        <span class="chat-notification-brief">Test</span>
+                        <span class="chat-notification-time">9:00 PM</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="app-grid-chat">
+                  <div class="chat-room" data-chat-room-id="5">
+                    <div class="chat__header">
+                      <button class="btn-no-style chat__header--back">
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <div class="chat__header--userimg user-img">
+                        <img
+                          src="/uploads/user/087892ac-66e0-46db-a8e2-8f3705672072_T02FDGMBB-U019MBGPWSX-e901f3c4db25-512.png">
+                      </div>
+                      <div class="chat__header--info">
+                        <span class="chat__header--username">Kanan Tapdigli</span>
+                      </div>
+                    </div>
+                    <div class="chat__messages" id="8e445865-a24d-4543-a6c6-9443d048cdb9">
+                      <span class="chat__messages__date">Saturday, October 2, 2021</span>
+                      <span class="chat__messages__alert">
+                        Sizin mesajlarınız tam şəkildə sinxronlaşdırılmışdır
+                      </span>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img
+                            src="/uploads/user/087892ac-66e0-46db-a8e2-8f3705672072_T02FDGMBB-U019MBGPWSX-e901f3c4db25-512.png">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Kanan Tapdigli</span>
+                            <span class="chat__message__time">12:05 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Salam necesen
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__meessage__send">
+                      <form class="send-message-form">
+                        <input class="userId" type="hidden" id="UserId" name="UserId"
+                          value="8e445865-a24d-4543-a6c6-9443d048cdb9" />
+                        <input class="chatId" type="hidden" id="ChatId" name="ChatId" />
+                        <div class="chat__message__action"></div>
+                        <div class="chat__send__grid">
+                          <textarea data-id="8e445865-a24d-4543-a6c6-9443d048cdb9" id="Message" name="Message"
+                            class="chat__send__field" placeholder="Mesaj yazın..."></textarea>
+                          <button type="submit" class="chat__send__btn btn-no-style">
+                            <img src="/client/img/chat/paper-plane.svg" alt="">
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="chat-room" data-chat-room-id="4">
+                    <div class="chat__header">
+                      <button class="btn-no-style chat__header--back">
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <div class="chat__header--userimg user-img">
+                        <img src="/client/img/profile/profilephoto.png">
+                      </div>
+                      <div class="chat__header--info">
+                        <span class="chat__header--username">Kanan Tapdigli</span>
+                      </div>
+                    </div>
+                    <div class="chat__messages" id="8e445865-a24d-4543-a6c6-9443d048cdb9">
+                      <span class="chat__messages__date">Thursday, September 30, 2021</span>
+                      <span class="chat__messages__alert">
+                        Sizin mesajlarınız tam şəkildə sinxronlaşdırılmışdır
+                      </span>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="/client/img/profile/profilephoto.png">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Kanan Tapdigli</span>
+                            <span class="chat__message__time">11:34 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Salam uy&#x11F;unam
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img
+                            src="/uploads/user/c07e6ef1-d7fd-46cc-a224-fe7e65506a9d_78EF999E-202D-4CCB-AC39-8E6C2F3075DA.jpeg">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo Manager</span>
+                            <span class="chat__message__time">11:38 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Salam, m&#x259;lumat ver&#x259;rdiniz &#xF6;z&#xFC;n&#xFC;z haqda?
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="/client/img/profile/profilephoto.png">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Kanan Tapdigli</span>
+                            <span class="chat__message__time">11:38 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            ad&#x131;m K&#x259;nand&#x131;
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img
+                            src="/uploads/user/c07e6ef1-d7fd-46cc-a224-fe7e65506a9d_78EF999E-202D-4CCB-AC39-8E6C2F3075DA.jpeg">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo Manager</span>
+                            <span class="chat__message__time">11:38 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            &#x259;la
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="/client/img/profile/profilephoto.png">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Kanan Tapdigli</span>
+                            <span class="chat__message__time">11:39 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            olar tan&#x131;maq?
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img
+                            src="/uploads/user/c07e6ef1-d7fd-46cc-a224-fe7e65506a9d_78EF999E-202D-4CCB-AC39-8E6C2F3075DA.jpeg">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo Manager</span>
+                            <span class="chat__message__time">11:39 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            aha olar
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="/client/img/profile/profilephoto.png">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Kanan Tapdigli</span>
+                            <span class="chat__message__time">11:39 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            nece yeni
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img
+                            src="/uploads/user/c07e6ef1-d7fd-46cc-a224-fe7e65506a9d_78EF999E-202D-4CCB-AC39-8E6C2F3075DA.jpeg">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo Manager</span>
+                            <span class="chat__message__time">11:39 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            geleceksen?
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="/client/img/profile/profilephoto.png">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Kanan Tapdigli</span>
+                            <span class="chat__message__time">12:19 AM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            salam qaqas yene men
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img
+                            src="/uploads/user/c07e6ef1-d7fd-46cc-a224-fe7e65506a9d_78EF999E-202D-4CCB-AC39-8E6C2F3075DA.jpeg">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo Manager</span>
+                            <span class="chat__message__time">3:36 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Salam
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="/client/img/profile/profilephoto.png">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Kanan Tapdigli</span>
+                            <span class="chat__message__time">4:30 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Salam mv
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img
+                            src="/uploads/user/c07e6ef1-d7fd-46cc-a224-fe7e65506a9d_78EF999E-202D-4CCB-AC39-8E6C2F3075DA.jpeg">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo Manager</span>
+                            <span class="chat__message__time">4:30 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            buyur
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img src="/client/img/profile/profilephoto.png">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Kanan Tapdigli</span>
+                            <span class="chat__message__time">4:31 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            bu is haqqinda
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img
+                            src="/uploads/user/c07e6ef1-d7fd-46cc-a224-fe7e65506a9d_78EF999E-202D-4CCB-AC39-8E6C2F3075DA.jpeg">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo Manager</span>
+                            <span class="chat__message__time">8:59 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Salam
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat__message">
+                        <div class="chat__message__img user-img">
+                          <img
+                            src="/uploads/user/c07e6ef1-d7fd-46cc-a224-fe7e65506a9d_78EF999E-202D-4CCB-AC39-8E6C2F3075DA.jpeg">
+                        </div>
+                        <div class="chat__message__info">
+                          <div class="d-flex align-items-center">
+                            <span class="chat__message__username">Wedo Manager</span>
+                            <span class="chat__message__time">9:00 PM</span>
+                          </div>
+                          <span class="chat__message__text">
+                            Test
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__meessage__send">
+                      <form class="send-message-form">
+                        <input class="userId" type="hidden" id="UserId" name="UserId"
+                          value="8e445865-a24d-4543-a6c6-9443d048cdb9" />
+                        <input class="chatId" type="hidden" id="ChatId" name="ChatId" />
+                        <div class="chat__message__action"></div>
+                        <div class="chat__send__grid">
+                          <textarea data-id="8e445865-a24d-4543-a6c6-9443d048cdb9" id="Message" name="Message"
+                            class="chat__send__field" placeholder="Mesaj yazın..."></textarea>
+                          <button type="submit" class="chat__send__btn btn-no-style">
+                            <img src="/client/img/chat/paper-plane.svg" alt="">
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- *********************       Components  End     ************************ -->
+
+  <!-- ******************************************************************** -->
+  <!--jquery-->
+  <!-- <script src="./src/vendor/jquery/jquery.min.js"></script>
+     -->
+
+  <!--bootstrap-->
+  <script src="src/vendor/bootstrap/bootstrap.bundle.min8128.js?v=fh8VA992XMpeCZiRuU4xii75UIG6KvHrbUF8yIS_2_4"></script>
+  <!-- owl carousel js -->
+  <script src="src/vendor/owl-carousel/owl.carousel.min.js"></script>
+  <script src="src/vendor/nice-select/jquery.nice-select.min.js"></script>
+  <script src="src/vendor/datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="src/vendor/datepicker/bootstrap-datepicker.ru.min.js"></script>
+
+  <!--javascript-->
+
+  <script src="src/js/main7422.js"></script>
+  <script src="src/js/success-alert.js"></script>
+
+  <script src="./src/js/truncate.js"></script>
+  <script src="./src/js/select.js"></script>
+  <script src="./src/js/chat.js"></script>
+  <script src="./src/js/language-select.js"></script>
+  <script src="./src/js/notif-dropdown.js"></script>
+
+  <!--scripts end-->
+  <script>
+    $(document).on('click', ".success-modal-dialog button,.modal-backdrop", function () {
+      setTimeout(function () {
+        $('.comment-modal-dialog').removeClass('d-none');
+        $('input[name = "rating"]').prop('checked', false);
+        $('input[name = "rating2"]').prop('checked', false);
+        $('input[name = "rating3"]').prop('checked', false);
+        $('input[name = "rating4"]').prop('checked', false);
+        $("#commentContent").val("");
+        $("#send-comment").prop("disabled", false);
+      }, 1000);
+    })
+    $(document).on('click', "#send-comment", function () {
+      if ($('input[name = "rating"]:checked').val() == undefined ||
+        $('input[name = "rating2"]:checked').val() == undefined ||
+        $('input[name = "rating3"]:checked').val() == undefined ||
+        $('input[name = "rating4"]:checked').val() == undefined) {
+        $("#comment-star-error").html("Bütün dəyərlər doldurulmalıdır");
+      }
+      else if ($("#commentContent").val() == "") {
+        $("#comment-star-error").html("Zəhmət olmasa rəy bildirin");
+      }
+      else {
+        $("#comment-star-error").html("");
+        let main = $('input[name = "rating"]:checked').val();
+        let quality = $('input[name = "rating2"]:checked').val();
+        let politeness = $('input[name = "rating3"]:checked').val();
+        let service = $('input[name = "rating4"]:checked').val();
+        let content = $("#commentContent").val();
+        let workId = $("#work-detail-id").val();
+        $(this).prop("disabled", true);
+
+
+        $.ajax({
+          type: "get",
+          url: "/Task/Comment",
+          data: {
+            "main": main,
+            "quality": quality,
+            "politeness": politeness,
+            "service": service,
+            "comment": content,
+            "workId": workId
+          },
+          success: function (res) {
+            $('.comment-modal-dialog').addClass('d-none');
+            $('.comments-row').append(res);
+          }
+        })
+      }
+
+
+    });
+  </script>
+
+  <script src="./src/js/feedback.js"></script>
+
+</body>
+
+</html>

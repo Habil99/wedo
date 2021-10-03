@@ -1,0 +1,332 @@
+/* Reviews */
+.btn-cancel {
+  margin-right: 16px;
+  background: #f1f1f1;
+  border-radius: 12px;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a4a4ad !important;
+}
+
+.reviews-section {
+  margin-top: 70px;
+}
+
+.reviews-section .make-areview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-section .make-areview span {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #11142d;
+}
+
+.reviews-section .btn-make-review {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e4e4e4;
+  margin-right: 16px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.review-card {
+  margin: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.review-card:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 80px;
+  width: 0.8px;
+  height: calc(100% - 100px);
+  background: #a4a4ad;
+}
+
+.review-card-img {
+  width: 64px;
+  height: 64px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 18px;
+  position: relative;
+}
+
+.review-card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.review-card-body {
+  margin-top: 10px;
+}
+
+.review-card-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 17px;
+}
+
+.review-card-user-name {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  color: #11142d;
+  margin-right: 8px;
+}
+
+.review-card-user-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  color: #7c7d89;
+}
+
+.review-card-user-type img {
+  max-width: 15px;
+  margin-right: 8px;
+}
+
+.review-card-user-info {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #7c7d89;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.review-card-work-type {
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #7c7d89;
+  margin-bottom: 8px;
+}
+
+.review-card-work-type span {
+  color: #11142d;
+}
+
+.review-card-text {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  color: #11142d;
+}
+
+.review-card-ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.review-card-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 25px 5px 0;
+}
+
+.review-card-rating-type {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #a4a4ad;
+  margin-right: 6px;
+}
+
+.review-card-rating-rate {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #11142d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-card-rating-rate img {
+  margin-left: 7px;
+}
+
+.feedback-modal .modal-dialog {
+  max-width: 520px;
+  border: none;
+}
+
+.feedback-modal-img {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.feedback-modal-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 300px;
+}
+
+.feedback-modal-success-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #11142d;
+  margin-bottom: 8px;
+  display: block;
+  text-align: center;
+}
+
+.feedback-modal .modal-content {
+  border: none;
+  padding: 32px 20px 24px;
+}
+
+.feedback-modal .modal-header {
+  padding: 0;
+}
+
+.feedback-modal-title {
+  display: block;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #11142d;
+}
+
+.feedback-modal-subtitle {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  color: #a4a4ad;
+  text-align: center;
+  display: block;
+}
+
+.feedback-modal .modal-body {
+  padding: 24px 0 0;
+}
+
+.feedback-modal .g-textarea {
+  margin-top: 24px;
+}
+
+.feedback-modal .feedback-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.feedback-modal .feedback-label:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.feedback-modal .feedback-label span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #7c7d89;
+  min-width: 130px;
+}
+
+.feedback-modal .feedback-stars {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+}
+
+.feedback-modal .feedback-star {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+}
+
+.feedback-modal .feedback-star:not(:last-child) {
+  margin-right: 10px;
+}
+
+.feedback-modal .feedback-star input:checked + label i {
+  color: #ffd938;
+}
+
+.feedback-modal .feedback-star label {
+  cursor: pointer;
+}
+
+.feedback-modal .feedback-star label i {
+  color: #e8e9ec;
+  font-size: 20px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* Reviews */
+/*# sourceMappingURL=reviews.css.map */

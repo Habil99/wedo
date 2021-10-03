@@ -1,0 +1,295 @@
+/* Reviews */
+
+.btn-cancel {
+  margin-right: 16px;
+  background: #f1f1f1;
+  border-radius: 12px;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a4a4ad !important;
+}
+
+.reviews-section {
+  margin-top: 70px;
+
+  .make-areview {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #11142d;
+    }
+  }
+
+  .btn-make-review {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e4e4e4;
+    margin-right: 16px;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.review-card {
+  margin: 12px 0;
+  display: flex;
+  position: relative;
+
+  &:not(:last-child) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 32px;
+      top: 80px;
+      width: 0.8px;
+      height: calc(100% - 100px);
+      background: #a4a4ad;
+    }
+  }
+
+  &-img {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    margin-right: 18px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &-body {
+    margin-top: 10px;
+  }
+
+  &-user {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+
+    &-name {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 160%;
+      color: #11142d;
+      margin-right: 8px;
+    }
+
+    &-type {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 160%;
+      color: #7c7d89;
+
+      img {
+        max-width: 15px;
+        margin-right: 8px;
+      }
+    }
+
+    &-info {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #7c7d89;
+      flex-grow: 1;
+      width: 100%;
+      margin-top: 4px;
+    }
+  }
+
+  &-work-type {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #7c7d89;
+    margin-bottom: 8px;
+
+    span {
+      color: #11142d;
+    }
+  }
+
+  &-text {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    color: #11142d;
+  }
+
+  &-ratings {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  &-rating {
+    display: flex;
+    align-items: center;
+    margin: 0 25px 5px 0;
+
+    &-type {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #a4a4ad;
+      margin-right: 6px;
+    }
+
+    &-rate {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 160%;
+      letter-spacing: 0.02em;
+      color: #11142d;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-left: 7px;
+      }
+    }
+  }
+}
+
+.feedback-modal {
+  .modal-dialog {
+    max-width: 520px;
+    border: none;
+  }
+
+  &-img {
+    text-align: center;
+    margin-bottom: 24px;
+
+    img {
+      object-fit: contain;
+      max-width: 300px;
+    }
+  }
+
+  &-success-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #11142d;
+    margin-bottom: 8px;
+    display: block;
+    text-align: center;
+  }
+
+  .modal-content {
+    border: none;
+    padding: 32px 20px 24px;
+  }
+
+  .modal-header {
+    padding: 0;
+  }
+
+  &-title {
+    display: block;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #11142d;
+  }
+
+  &-subtitle {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    color: #a4a4ad;
+    text-align: center;
+    display: block;
+  }
+
+  .modal-body {
+    padding: 24px 0 0;
+  }
+
+  .g-textarea {
+    margin-top: 24px;
+  }
+
+  .feedback-label {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 160%;
+      letter-spacing: 0.02em;
+      color: #7c7d89;
+      min-width: 130px;
+    }
+  }
+
+  .feedback-stars {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .feedback-star {
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    input:checked {
+      + label {
+        i {
+          color: #ffd938;
+        }
+      }
+    }
+
+    label {
+      cursor: pointer;
+
+      i {
+        color: #e8e9ec;
+        font-size: 20px;
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+}
+
+/* Reviews */
