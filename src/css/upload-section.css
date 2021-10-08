@@ -132,4 +132,100 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+.work-examples {
+  margin-bottom: 80px;
+}
+
+.work-examples-title {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #11142d;
+  margin-bottom: 16px;
+}
+
+.work-examples-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.work-examples-heading span:first-child {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  color: #11142d;
+}
+
+.work-examples-heading span:last-child {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  color: #7c7d89;
+}
+
+.work-examples .edit-btn {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-examples .edit-btn img {
+  max-width: 24px;
+  margin-right: 8px;
+}
+
+.work-examples .edit-btn span {
+  color: #5e5ce6;
+}
+
+.image-carousel {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 220px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.image-carousel img {
+  min-height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-carousel .owl-prev {
+  display: none !important;
+}
+
+.image-carousel .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.image-carousel .owl-next:hover {
+  color: #fff;
+  background-color: #5e5ce6 !important;
+}
 /*# sourceMappingURL=upload-section.css.map */
