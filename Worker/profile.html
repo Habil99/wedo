@@ -26,6 +26,7 @@
   <script src="../src/vendor/jquery/jquery.min.js"></script>
 
   <link rel="stylesheet" href="../src/css/main.min.css">
+  <link rel="stylesheet" href="../src/css/upload-section.css">
 
 </head>
 
@@ -589,6 +590,33 @@
             </div>
 
 
+            <div class="upload-images">
+              <label for="upload-file" class="upload-btn">
+                <input class="visually-hidden" type="file" name="" multiple="" id="upload-file">
+                <span>
+                  <img src="../src/img/home/upload.svg" alt="">
+                </span>
+                <span>Загрузить фото</span>
+              </label>
+              <div class="progress-bars"></div>
+              <!-- <div class="upload-progress">
+                <div class="upload-progress-info">
+                  <span class="uploaded-filename">Screenshot_1.png</span>
+                  <span class="uploaded-amount">50%</span>
+                </div>
+                <div class="progressbar">
+                  <div class="progressbar-inner"></div>
+                </div>
+              </div> -->
+              <div class="uploaded-images">
+                <!-- <div class="uploaded-image">
+                  <button class="refuse-action">
+                    <i class="fas fa-times    "></i>
+                  </button>
+                  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+                </div> -->
+              </div>
+            </div>
           </div>
 
 
@@ -639,9 +667,9 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
+
 
 
   </main>
@@ -1035,6 +1063,8 @@
   <script src="../src/js/edit-info.js"></script>
   <script src="../src/js/upload.js"></script>
   <script src="../src/js/show-more.js"></script>
+
+  <script src="../src/js/upload-file.js"></script>
 </body>
 
 </html>
