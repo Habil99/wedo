@@ -6725,3 +6725,26 @@ header .mobile-menu {
     align-items: center;
     font-size: 22px;
 }
+
+.dropdown-user button {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-user button img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.dropdown-user button.show i {
+    transform: rotate(180deg);
+}
+
+.dropdown-user button i {
+    font-size: 12px;
+    margin-left: 4px;
+    color: #11142d;
+    transition: all 0.2s linear;
+}
