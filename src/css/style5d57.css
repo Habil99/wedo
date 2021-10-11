@@ -6686,7 +6686,6 @@ header .mobile-menu {
 
 /*  Here changed */
 
-
 .faq .faq-item .faq-content {
     max-height: 0;
     -webkit-transition: max-height 0.3s ease;
@@ -6747,4 +6746,69 @@ header .mobile-menu {
     margin-left: 4px;
     color: #11142d;
     transition: all 0.2s linear;
+}
+
+.become-performer .categories {
+    flex-direction: column;
+}
+
+.profile-header .profile-img .profile-img-button form label {
+    height: 40px;
+    border-radius: 12px;
+    padding: 18px 40px 18px 40px;
+    display: block;
+    width: calc(100% - 40px);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #11142d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+    background: white;
+}
+
+.profile-header .profile-img .profile-img-button {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.advantages .advantage .advantage-image img {
+    position: absolute;
+    z-index: 4;
+    left: 22%;
+    bottom: -6%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .advantages .col-xl-6:nth-child(3) img {
+        left: 12%;
+        height: auto;
+    }
 }
