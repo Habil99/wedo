@@ -559,18 +559,6 @@ $(".chat__send__btn").on("click", function (e) {
     $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight + 200)
 })
 
-// const send_btns = document.querySelectorAll('.chat__send__btn');
-// const message_wrappers = document.querySelectorAll(".chat__messages")
-
-// send_btns.forEach((btn, index) => {
-//     btn.addEventListener('click', function (e) {
-//         e.preventDefault()
-
-//         const wrapper = message_wrappers[index]
-//         wrapper.scrollTop = wrapper.scrollHeight
-//     })
-// })
-
 const accordion_btns = [...document.querySelectorAll('.faq-header')]
 const accordion_contents = [...document.querySelectorAll(".faq-content")]
 const accordion_icons = [...document.querySelectorAll('.faq-icon')]
@@ -581,7 +569,14 @@ accordion_btns?.forEach((btn) => {
             if (button === btn && !button.classList.contains('collapsed')) {
                 button.classList.add("collapsed")
                 accordion_contents[index].classList.add('show')
-                accordion_icons[index].innerHTML = '-'
+                accordion_icons[index].animate({
+                    transform: 'rotate(180deg)',
+                }, 400)
+
+                const timeout = setTimeout(() => {
+                    accordion_icons[index].innerHTML = "-"
+                    clearTimeout(timeout)
+                }, 400)
             } else {
                 button.classList.remove("collapsed")
                 accordion_contents[index].classList.remove('show')

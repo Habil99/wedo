@@ -6730,7 +6730,7 @@ header .mobile-menu {
     align-items: center;
 }
 
-.dropdown-user button img {
+.dropdown-user button .dropdown-user-img {
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -6794,6 +6794,10 @@ header .mobile-menu {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 12px;
+}
+
+.profile-header #profile-img {
+    border-radius: 16px;
 }
 
 .advantages .advantage .advantage-image img {
