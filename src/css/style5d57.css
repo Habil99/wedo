@@ -6816,3 +6816,74 @@ header .mobile-menu {
         height: auto;
     }
 }
+
+/*last added*/
+
+.form-section {
+    margin: 50px 0 80px;
+}
+
+.form-section .go-back {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #5e5ce6;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.form-section .go-back span {
+    margin-left: 12px;
+}
+
+.form-section .section-title {
+    margin-bottom: 32px;
+}
+
+.form-section .form-group + .form-group {
+    margin-top: 38px;
+}
+
+.form-section .g-textarea {
+    min-height: 200px;
+}
+
+.form-section .g-textarea {
+    max-height: 350px;
+}
+
+.label-g {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #11142d;
+}
+
+.btn-outlined {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #11142d;
+    border-radius: 12px;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 0px;
+    /* identical to box height, or 0% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    /* text/active */
+
+    color: #11142d;
+}
+
+.h-48 {
+    min-height: 48px;
+}

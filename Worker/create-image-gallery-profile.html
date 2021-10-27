@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelance</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="../src/vendor/bootstrap/bootstrap.css" />
+    <!-- owl carousel css -->
+    <link
+      rel="stylesheet"
+      href="../src/vendor/owl-carousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../src/vendor/owl-carousel/owl.theme.default.min.css"
+    />
+    <!--font Awesome css-->
+    <link rel="stylesheet" href="../src/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../src/vendor/nice-select/nice-select.css" />
+    <link
+      rel="stylesheet"
+      href="../src/vendor/datepicker/bootstrap-datepicker.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../src/vendor/datepicker/bootstrap-datepicker.standalone.min.css"
+    />
+    <!--main css-->
+    <link rel="stylesheet" href="../src/css/style5d57.css" />
+    <link rel="stylesheet" href="../src/css/backendd5e1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../src/vendor/jquery/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <link rel="stylesheet" href="../src/css/upload-section.css">
+  </head>
+
+  <body>
+    <!-- *********************     Header  Start     ************************ -->
+    <header
+      class="
+        header
+        d-flex
+        align-items-center
+        justify-content-between
+        sticky-top
+        shadow-sm
+      "
+    >
+      <nav class="header-left d-flex align-items-center">
+        <div class="nav-button d-lg-none d-flex">
+          <div class="three col pl-0">
+            <div class="hamburger" id="hamburger-11">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="../src/img/home/logo.png" alt="logo" class="logo" />
+          </a>
+        </div>
+        <div class="navigation d-flex align-items-center">
+          <a
+            style="cursor: pointer"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            class="nav-link btn-main shadow-none"
+            >İş Yarat</a
+          >
+          <a
+            style="cursor: pointer"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            class="nav-link"
+            >İşçi ol</a
+          >
+
+          <a class="nav-link" href="Task/FindWork.html">İş Axtar</a>
+          <a class="nav-link" href="Worker/Workers.html">İşçilər</a>
+          <a
+            style="cursor: pointer"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            class="nav-link"
+            >Mənim İşlərim</a
+          >
+        </div>
+      </nav>
+      <div class="header-right">
+        <div
+          class="
+            header-actions
+            d-flex
+            justify-content-center
+            align-items-center
+          "
+        >
+          <div class="language-select" id="language-select">
+            <select name="" id="">
+              <option value="">Az</option>
+              <option value="">Ru</option>
+              <option value="">En</option>
+            </select>
+          </div>
+          <div class="nav-item">
+            <div class="notification-dropdown">
+              <button
+                id="notification-btn"
+                type="button"
+                class="icon d-flex flex-row btn-no-style"
+              >
+                <img src="../src/img/icon/icon-comp.svg" alt="" />
+                <span class="notification-count">2</span>
+              </button>
+              <div class="notification-dropdown-menu visually-hidden">
+                <div class="notification-wrapper">
+                  <p class="notification-wrapper__title">Уведомления</p>
+                  <div class="notifications">
+                    <p class="notification-wrapper__subtitle">
+                      Hal-hazirda heç bir bildiriş yoxdur!
+                    </p>
+                    <div class="notification unread">
+                      <div class="notification-img">
+                        <img
+                          class="notification-img-main"
+                          src="./../src/img/notification/notification.png"
+                          alt=""
+                        />
+                        <img
+                          class="notification-img-top"
+                          src="./../src/img/notification/message.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="notification-info">
+                        <span class="notification-message-username"
+                          >Осталось только установить пароль</span
+                        >
+                        <span class="notification-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Quas cupiditate, impedit architecto tempore
+                          pariatur molestias.
+                        </span>
+                        <span class="notification-time">40 мин</span>
+                      </div>
+                    </div>
+                    <div class="notification">
+                      <div class="notification-img">
+                        <img
+                          class="notification-img-main"
+                          src="./../src/img/notification/notification.png"
+                          alt=""
+                        />
+                        <img
+                          class="notification-img-top"
+                          src="./../src/img/notification/message.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="notification-info">
+                        <span class="notification-message">
+                          <span class="notification-message-username"
+                            >Сара Браун</span
+                          >
+                          отправил вам сообщение
+                        </span>
+                        <span class="notification-time">40 мин</span>
+                      </div>
+                    </div>
+                    <div class="notification">
+                      <div class="notification-img">
+                        <img
+                          class="notification-img-main"
+                          src="./../src/img/notification/notification.png"
+                          alt=""
+                        />
+                        <img
+                          class="notification-img-top"
+                          src="./../src/img/notification/message.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="notification-info">
+                        <span class="notification-message">
+                          <span class="notification-message-username"
+                            >Сара Браун</span
+                          >
+                          отправил вам сообщение
+                        </span>
+                        <span class="notification-time">40 мин</span>
+                      </div>
+                    </div>
+                    <div class="notification">
+                      <div class="notification-img">
+                        <img
+                          class="notification-img-main"
+                          src="./../src/img/notification/notification.png"
+                          alt=""
+                        />
+                        <img
+                          class="notification-img-top"
+                          src="./../src/img/notification/message.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="notification-info">
+                        <span class="notification-message">
+                          <span class="notification-message-username"
+                            >Сара Браун</span
+                          >
+                          отправил вам сообщение
+                        </span>
+                        <span class="notification-time">40 мин</span>
+                      </div>
+                    </div>
+                    <div class="notification">
+                      <div class="notification-img">
+                        <img
+                          class="notification-img-main"
+                          src="./../src/img/notification/notification.png"
+                          alt=""
+                        />
+                        <img
+                          class="notification-img-top"
+                          src="./../src/img/notification/message.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="notification-info">
+                        <span class="notification-message">
+                          <span class="notification-message-username"
+                            >Сара Браун</span
+                          >
+                          отправил вам сообщение
+                        </span>
+                        <span class="notification-time">40 мин</span>
+                      </div>
+                    </div>
+                    <div class="notification">
+                      <div class="notification-img">
+                        <img
+                          class="notification-img-main"
+                          src="./../src/img/notification/notification.png"
+                          alt=""
+                        />
+                        <img
+                          class="notification-img-top"
+                          src="./../src/img/notification/message.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="notification-info">
+                        <span class="notification-message">
+                          <span class="notification-message-username"
+                            >Сара Браун</span
+                          >
+                          отправил вам сообщение
+                        </span>
+                        <span class="notification-time">40 мин</span>
+                      </div>
+                    </div>
+                    <div class="notification">
+                      <div class="notification-img">
+                        <img
+                          class="notification-img-main"
+                          src="./../src/img/notification/notification.png"
+                          alt=""
+                        />
+                        <img
+                          class="notification-img-top"
+                          src="./../src/img/notification/message.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="notification-info">
+                        <span class="notification-message">
+                          <span class="notification-message-username"
+                            >Сара Браун</span
+                          >
+                          отправил вам сообщение
+                        </span>
+                        <span class="notification-time">40 мин</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="mark-as-read">Mark all as read</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="header-component mr-sm-3 mr-0"
+            data-toggle="modal"
+            data-target="#chat-modal"
+          >
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#chatModal"
+              class="btn-no-style icon1 d-flex flex-column"
+            >
+              <img src="../src/img/icon/letter.svg" alt="" />
+            </button>
+          </a>
+          <div class="dropdown dropdown-user">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img
+                class="dropdown-user-img"
+                src="https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt=""
+              />
+
+              <i class="fas fa-chevron-down"></i>
+              <!-- <div class="icon d-flex flex-row align-items-center justify-content-center">
+                      <span>Habil Abiyev</span>
+                      <img class="img-fluid" src="../src/img/icon/icon-comp5.svg" alt="">
+                    </div> -->
+            </button>
+            <!-- <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <div class="icon d-flex flex-row align-items-center justify-content-center">
+                                  <img class="img-fluid" src="../src/img/icon/icon-comp5.svg" alt="">
+                              </div>
+                          </button> -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <button
+                class="dropdown-item menu1 user-login mb-0"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Bход
+              </button>
+              <button
+                class="dropdown-item menu1"
+                data-bs-toggle="modal"
+                data-bs-target="#registerModal"
+              >
+                Регистрация
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="d-flex flex-row align-items-center">
+          <a href="create-task.html" class="btn-main shadow-none nav-link"
+            >Создать задание</a
+          >
+          <div class="dropdown dropdown-language d-lg-flex align-items-center">
+            <div class="language-select" id="language-select">
+              <select name="" id="">
+                <option value="">Az</option>
+                <option value="">Ru</option>
+                <option value="">En</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <a href="landingForPerformers.html" class="nav-link px-0 mt-4"
+          >Стать исполнителем</a
+        >
+        <a href="find-work.html" class="nav-link px-0">Найти задание</a>
+        <a href="performers.html" class="nav-link px-0">Исполнители</a>
+        <a href="contact.html" class="nav-link px-0">Частые вопросы</a>
+        <a href="contact.html" class="nav-link px-0">Контакты</a>
+        <a href="blog.html" class="nav-link px-0">Наш блог</a>
+        <a href="#" class="nav-link px-0">Политика конфиденциальности</a>
+        <a href="#" class="nav-link px-0 mb-3">Условия использования</a>
+
+        <div class="social-medias d-sm-inline">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- *********************       Header  End     ************************ -->
+    <!-- ******************************************************************** -->
+    <!-- *********************     Main  Start     ************************ -->
+    <main style="overflow: hidden">
+      <div class="form-section">
+        <div class="container">
+          <div class="d-flex">
+            <button class="btn-no-style go-back">
+              <i class="fas fa-arrow-left"></i>
+              <span>Вернуться к профилю</span>
+            </button>
+          </div>
+          <div class="row">
+            <div class="col-lg-9">
+              <h2 class="section-title">Новый альбом</h2>
+              <div class="form-group">
+                <label for="" class="label-g">Название альбома</label>
+                <input
+                  type="text"
+                  class="form-control styled-input"
+                  id=""
+                  placeholder="Например, “Фотоссесия в студии”"
+                />
+              </div>
+              <div class="form-group">
+                <label for="" class="label-g">Описание альбома</label>
+                <textarea
+                  type="text"
+                  class="g-textarea"
+                  id=""
+                  placeholder="Опишите какие работы представлены в этом альбоме, в чем их особенность, когда они были выполнены, в каких целях и т.д. "
+                ></textarea>
+              </div>
+              <div class="upload-images">
+                <label for="upload-file" class="upload-btn">
+                  <input class="visually-hidden" type="file" name="" multiple="" id="upload-file">
+                  <span>
+                    <img src="../src/img/home/upload.svg" alt="">
+                  </span>
+                  <span>Загрузить фото</span>
+                </label>
+                <div class="progress-bars"></div>
+                <!-- <div class="upload-progress">
+                  <div class="upload-progress-info">
+                    <span class="uploaded-filename">Screenshot_1.png</span>
+                    <span class="uploaded-amount">50%</span>
+                  </div>
+                  <div class="progressbar">
+                    <div class="progressbar-inner"></div>
+                  </div>
+                </div> -->
+                <div class="uploaded-images">
+                  <!-- <div class="uploaded-image">
+                    <button class="refuse-action">
+                      <i class="fas fa-times    "></i>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+                <a href="" class="btn-green btn-main w-100 mb-2 h-48">Сохранить</a>
+                <a href="" class="btn-outlined w-100 h-48">Отменить изменения</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer py-lg-5 py-3">
+      <div class="g-container">
+        <div class="row justify-content-lg-start justify-content-center">
+          <div
+            class="
+              col-lg-3 col-md-6
+              order-lg-1 order-md-4 order-5
+              my-lg-0 my-sm-5 my-4 my-3 my-3
+              text-md-left text-sm-center
+              d-flex
+              flex-sm-column
+              justify-content-sm-center
+              align-items-md-baseline
+              justify-content-between
+              align-items-center
+            "
+          >
+            <div class="footer-logo d-sm-inline d-none">
+              <img src="../src/img/home/logo.png" alt="logo" />
+            </div>
+            <p class="footer-paragraph mt-4 d-sm-inline d-none">
+              Rahat və əlverişli servis xidməti.
+            </p>
+            <p class="footer-paragraph mt-sm-4 mt-0 copyright">
+              Wedo Copyright 2021. All Right Reserved Wedo
+            </p>
+          </div>
+          <div
+            class="
+              col-lg-3 col-md-6
+              order-lg-5 order-md-4 order-2
+              my-lg-0 my-sm-5 my-4
+              d-sm-none d-block
+              text-md-left text-center
+            "
+          >
+            <div class="footer-logo">
+              <img src="../src/img/home/logo.png" alt="logo" />
+            </div>
+            <p class="footer-paragraph mt-4">
+              Rahat və əlverişli servis xidməti.
+            </p>
+          </div>
+          <div
+            class="
+              col-lg-3 col-md-6
+              order-lg-2 order-md-3 order-4
+              d-flex
+              flex-column
+              my-lg-0
+              mt-md-5
+              mb-sm-5
+              mt-sm-1
+              text-md-left text-center
+            "
+          >
+            <a
+              style="cursor: pointer"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              class="footer-link"
+              >İşçi ol</a
+            >
+
+            <a class="footer-link mt-4" href="Contact-2.html"
+              >Ən çox verilən suallar</a
+            >
+            <a class="footer-link mt-4" href="Contact-2.html">Bizimlə Əlaqə</a>
+            <a class="footer-link mt-4" href="Blog-2.html">Bloglar</a>
+            <div
+              class="social-medias social-md mt-4 d-sm-inline d-md-none d-block"
+            >
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="
+              col-lg-3 col-md-6
+              order-lg-3 order-3
+              d-flex
+              flex-column
+              my-lg-0
+              mt-sm-4
+              my-4
+              text-md-left text-center
+            "
+          >
+            <a class="footer-link" href="Blog-2.html">Gizlilik Siyasəti</a>
+            <a class="footer-link mt-4" href="Condition.html"
+              >İstifadə qaydaları</a
+            >
+            <div class="social-medias social mt-4">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 order-lg-4 order-1 my-lg-0 my-sm-5 my-4"
+          >
+            <div class="subscribe-area">
+              <p class="p form-content">
+                Ən son xəbərləri qaçırmamaq üçün abunə olun!
+              </p>
+              <form
+                action="#"
+                id="subscribe-form"
+                class="d-flex align-items-center"
+              >
+                <input
+                  type="text"
+                  id="subscribe"
+                  placeholder="Sizin epoçtunuz"
+                  class="pl-2 border-0"
+                />
+                <button type="submit">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- *********************       Footer  End     ************************ -->
+    <!-- ******************************************************************** -->
+    <!-- *********************   Components Start  ************************ -->
+    <div class="components">
+      <!-- Button trigger modal -->
+      <!-- Modal -->
+      <div
+        class="modal fade user-modal"
+        id="loginModal"
+        role="dialog"
+        aria-labelledby="loginModalTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h2 class="h2 text-center">Daxil ol</h2>
+              <div class="register-options">
+                <a href="#" class="google-area">
+                  <div class="google">
+                    <img
+                      src="../src/img/registrationIcons/google.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <a href="#" class="facebook-area">
+                  <div class="facebook">
+                    <img
+                      src="../src/img/registrationIcons/facebook.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <a href="#" class="apple-area">
+                  <div class="apple">
+                    <img
+                      src="../src/img/registrationIcons/apple.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+              <span class="header-bottom mt-4"
+                >və ya daxil olun, istifadə edərək</span
+              >
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="form-group">
+                  <label for="phone-email">EPoçt</label>
+                  <input
+                    type="text"
+                    class="form-control styled-input"
+                    id="log-phone"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Şifrə</label>
+                  <input
+                    type="password"
+                    class="form-control styled-input"
+                    id="log-password"
+                  />
+                </div>
+                <div class="error-wrapper">
+                  <ul class="error-wrapper__list">
+                    <li class="error-wrapper__list__item">
+                      Şifrə və ya e-poçt adresi düzgen deyil
+                      <i class="fa fa-exclamation" aria-hidden="true"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="success-wrapper">
+                  <ul class="success-wrapper__list">
+                    <li class="success-wrapper__list__item">
+                      Əməliyyat uğurludur <i class="fas fa-check"></i>
+                    </li>
+                  </ul>
+                </div>
+                <a class="btn btn-main w-100 shadow-none" id="login-btn"
+                  >Daxil ol</a
+                >
+                <div id="log-error" class="text-center">
+                  <span class="text-danger"></span>
+                </div>
+                <a
+                  class="forgot-password text-center"
+                  href="Account/ForgotPassword.html"
+                  >Şifrəni unutdum?</a
+                >
+              </form>
+            </div>
+            <div class="modal-footer">
+              <div class="redirect-register">
+                Qeydiyyatdan keçməmisiniz ?
+                <a style="cursor: pointer" class="close-login">
+                  Qeydiyyatdan keçin</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade user-modal"
+        id="registerModal"
+        role="dialog"
+        aria-labelledby="loginModalTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered"
+          id="registerContent"
+          role="document"
+        >
+          <div class="modal-content register-body d-block">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+              <h2 class="h2 text-center">Tez Bir zamanda Qeydiyyat Vasitə:</h2>
+              <div class="register-options">
+                <a href="#" class="google-area">
+                  <div class="google">
+                    <img
+                      src="../src/img/registrationIcons/google.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <a href="#" class="facebook-area">
+                  <div class="facebook">
+                    <img
+                      src="../src/img/registrationIcons/facebook.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <a href="#" class="apple-area">
+                  <div class="apple">
+                    <img
+                      src="../src/img/registrationIcons/apple.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+              <span class="header-bottom mt-4"
+                >və ya qeydiyyatdan keçin,istifadə edərək</span
+              >
+            </div>
+            <div class="modal-body">
+              <form>
+                <label for="phone-email">EPoçt</label>
+                <div class="form-group mb-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="reg-email-input"
+                  />
+                </div>
+                <div class="mb-3 text-center"></div>
+                <a
+                  id="sendEmail"
+                  class="btn btn-main w-100 shadow-none register-button"
+                  style="cursor: pointer"
+                  >EPoçta kodu yolla
+                </a>
+                <div class="loader"></div>
+                <div
+                  class="form-check form-check-inline m-0 styled-checkbox mt-3"
+                >
+                  <input
+                    class="form-check-input provision-input"
+                    type="checkbox"
+                    name="provisionArea"
+                    id="con-reg-input"
+                    value="option1"
+                    checked
+                  />
+                  <label
+                    class="form-check-label radio-active left-radius"
+                    for="inlineRadio1"
+                  >
+                    Sizin Şərtlərlə razıyam
+                  </label>
+                </div>
+                <div class="text-center">
+                  <span class="text-danger" id="con-reg"></span>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <div class="redirect-register">
+                Qeydiyyatdan keçmisiz ?
+                <a style="cursor: pointer" class="close-register">Daxil olun</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-modals">
+        <div
+          class="modal multiple-modals fade chat-modal"
+          id="chatModal"
+          role="dialog"
+          aria-labelledby="chatModalTitle"
+          aria-hidden="true"
+          aria-modal="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered"
+            id="chatModalContent"
+            role="document"
+          >
+            <div class="modal-content">
+              <button class="close-chat" data-bs-dismiss="modal">
+                <i class="fas fa-times"></i>
+              </button>
+              <div class="modal-body">
+                <div class="app-grid">
+                  <div class="app-grid-left">
+                    <form action="">
+                      <div class="chat-search sticky-top">
+                        <input placeholder="Поиск сообщений" type="text" />
+                        <button class="btn-no-style" type="submit">
+                          <img
+                            class="img-fluid"
+                            src="./../src/img/icon/search.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </form>
+                    <div class="chat-notifications">
+                      <div
+                        class="chat-notification active"
+                        data-notification
+                        data-user-id="#Вася23"
+                      >
+                        <div class="chat-notification-user user-img">
+                          <img src="./../src/img/chat/user-1.svg" alt="" />
+                        </div>
+                        <div class="chat-notification-info">
+                          <span class="chat-notification-username"
+                            >Вася П.</span
+                          >
+                          <span class="chat-notification-userid"
+                            >Задание № 9069604</span
+                          >
+                          <span class="chat-notification-brief"
+                            >Таким образом новая модельsasasssssssssssss</span
+                          >
+                          <span class="chat-notification-time"
+                            >1 сек назад</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="chat-notification unread"
+                        data-notification
+                        data-user-id="#Леонид2112"
+                      >
+                        <div class="chat-notification-user user-img">
+                          <img src="./../src/img/chat/user-2.svg" alt="" />
+                        </div>
+                        <div class="chat-notification-info">
+                          <span class="chat-notification-username"
+                            >Леонид С.</span
+                          >
+                          <span class="chat-notification-userid"
+                            >Задание № 9069604</span
+                          >
+                          <span class="chat-notification-brief"
+                            >во сколько вам удобно будет ...</span
+                          >
+                          <span class="chat-notification-time"
+                            >1 сек назад</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="chat-notification"
+                        data-notification
+                        data-user-id="#WeDo55"
+                      >
+                        <div class="chat-notification-user user-img">
+                          <img src="./../src/img/chat/user-3.svg" alt="" />
+                        </div>
+                        <div class="chat-notification-info">
+                          <span class="chat-notification-username">WeDo</span>
+                          <span class="chat-notification-userid"
+                            >Задание № 9069604</span
+                          >
+                          <span class="chat-notification-brief"
+                            >Осталось только установить ...</span
+                          >
+                          <span class="chat-notification-time"
+                            >2 часа назад</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="chat-notification"
+                        data-notification
+                        data-user-id="#Яна44"
+                      >
+                        <div class="chat-notification-user user-img">
+                          <img src="./../src/img/chat/user-4.svg" alt="" />
+                        </div>
+                        <div class="chat-notification-info">
+                          <span class="chat-notification-username">Яна Ф.</span>
+                          <span class="chat-notification-userid"
+                            >Задание № 9069604</span
+                          >
+                          <span class="chat-notification-brief"
+                            >Таким образом новая модельsasasssssssssssss</span
+                          >
+                          <span class="chat-notification-time"
+                            >1 сек назад</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="chat-notification unread"
+                        data-notification
+                        data-user-id="#Леонид5453"
+                      >
+                        <div class="chat-notification-user user-img">
+                          <img src="./../src/img/chat/user-2.svg" alt="" />
+                        </div>
+                        <div class="chat-notification-info">
+                          <span class="chat-notification-username"
+                            >Леонид С.</span
+                          >
+                          <span class="chat-notification-userid"
+                            >Задание № 9069604</span
+                          >
+                          <span class="chat-notification-brief"
+                            >во сколько вам удобно будет ...</span
+                          >
+                          <span class="chat-notification-time"
+                            >1 сек назад</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app-grid-chat">
+                    <div class="chat-room" data-chat-room-id="#Вася23">
+                      <div class="chat__header">
+                        <button class="btn-no-style chat__header--back">
+                          <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="chat__header--userimg user-img">
+                          <img src="./../src/img/chat/user-1.svg" alt="" />
+                        </div>
+                        <div class="chat__header--info">
+                          <span class="chat__header--username">Вася П.</span>
+                          <span class="chat__header--lastseen"
+                            >Была в сети 10 мин. назад</span
+                          >
+                        </div>
+                        <div class="chat__header--dropdown dropdown">
+                          <button
+                            class="btn-no-style"
+                            type="button"
+                            id="chatDropdown"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="chatDropdown"
+                          >
+                            <ul>
+                              <li>
+                                <button
+                                  class="btn-no-style"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#complaintModal"
+                                >
+                                  Пожаловаться
+                                </button>
+                              </li>
+                              <li>
+                                <button class="btn-no-style">
+                                  Отметить как непрочитанное
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  class="btn-no-style"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#refuseModal"
+                                >
+                                  Отказаться от исполнителя
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat__messages">
+                        <span class="chat__messages__date">21 июл 2021</span>
+                        <span class="chat__messages__alert">
+                          Таким образом новая модель организационной
+                          деятельности играет важную роль или вы можете отменить
+                          свое решение.
+                        </span>
+                      </div>
+                      <div class="chat__meessage__send">
+                        <form action="">
+                          <div class="chat__message__action"></div>
+                          <div class="chat__send__grid">
+                            <label class="chat__send__img" for="send-img">
+                              <input
+                                class="visually-hidden"
+                                type="file"
+                                name=""
+                                id="send-img"
+                              />
+                              <i class="fas fa-camera"></i>
+                            </label>
+                            <textarea
+                              class="chat__send__field"
+                              placeholder="Напишите сообщение..."
+                              name=""
+                              id=""
+                            ></textarea>
+                            <button class="chat__send__btn btn-no-style">
+                              <img
+                                src="./../src/img/chat/paper-plane.svg"
+                                alt=""
+                              />
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="chat-room" data-chat-room-id="#Леонид2112">
+                      <div class="chat__header">
+                        <button class="btn-no-style chat__header--back">
+                          <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="chat__header--userimg user-img">
+                          <img src="./../src/img/chat/user-1.svg" alt="" />
+                        </div>
+                        <div class="chat__header--info">
+                          <span class="chat__header--username">Вася П.</span>
+                          <span class="chat__header--lastseen"
+                            >Была в сети 10 мин. назад</span
+                          >
+                        </div>
+                        <div class="chat__header--dropdown dropdown">
+                          <button
+                            class="btn-no-style"
+                            type="button"
+                            id="chatDropdown"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="chatDropdown"
+                          >
+                            <ul>
+                              <li>
+                                <button
+                                  class="btn-no-style"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#complaintModal"
+                                >
+                                  Пожаловаться
+                                </button>
+                              </li>
+                              <li>
+                                <button class="btn-no-style">
+                                  Отметить как непрочитанное
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  class="btn-no-style"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#refuseModal"
+                                >
+                                  Отказаться от исполнителя
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat__messages">
+                        <span class="chat__messages__date">21 июл 2021</span>
+                        <span class="chat__messages__alert">
+                          Таким образом новая модель организационной
+                          деятельности играет важную роль или вы можете отменить
+                          свое решение.
+                        </span>
+                        <div class="chat__message">
+                          <div class="chat__message__img user-img">
+                            <img src="./../src/img/chat/user-1.svg" alt="" />
+                          </div>
+                          <div class="chat__message__info">
+                            <div class="d-flex align-items-center">
+                              <span class="chat__message__username"
+                                >Вася П.</span
+                              >
+                              <span class="chat__message__time">10:51</span>
+                            </div>
+                            <span class="chat__message__text">
+                              Задача организации, в особенности же сложившаяся
+                              структура организации требуют от нас анализа
+                              направлений прогрессивного развития.
+                            </span>
+                          </div>
+                        </div>
+                        <div class="chat__message">
+                          <div class="chat__message__img user-img">
+                            <img src="./../src/img/chat/user-3.svg" alt="" />
+                          </div>
+                          <div class="chat__message__info">
+                            <div class="d-flex align-items-center">
+                              <span class="chat__message__username">Wedo</span>
+                              <span class="chat__message__time">10:51</span>
+                            </div>
+                            <span class="chat__message__text">
+                              Таким образом новая модель организационной
+                              деятельности играет важную роль
+                            </span>
+                          </div>
+                        </div>
+                        <div class="chat__message">
+                          <div class="chat__message__img user-img">
+                            <img src="./../src/img/chat/user-1.svg" alt="" />
+                          </div>
+                          <div class="chat__message__info">
+                            <div class="d-flex align-items-center">
+                              <span class="chat__message__username"
+                                >Вася П.</span
+                              >
+                              <span class="chat__message__time">10:51</span>
+                            </div>
+                            <span class="chat__message__text">
+                              Задача организации, в особенности же сложившаяся
+                              структура организации требуют от нас анализа
+                              направлений прогрессивного развития.
+                            </span>
+                          </div>
+                        </div>
+                        <div class="chat__message">
+                          <div class="chat__message__img user-img">
+                            <img src="./../src/img/chat/user-3.svg" alt="" />
+                          </div>
+                          <div class="chat__message__info">
+                            <div class="d-flex align-items-center">
+                              <span class="chat__message__username">Wedo</span>
+                              <span class="chat__message__time">10:51</span>
+                            </div>
+                            <span class="chat__message__text">
+                              Таким образом новая модель организационной
+                              деятельности играет важную роль
+                            </span>
+                          </div>
+                        </div>
+                        <div class="chat__message">
+                          <div class="chat__message__img user-img">
+                            <img src="./../src/img/chat/user-1.svg" alt="" />
+                          </div>
+                          <div class="chat__message__info">
+                            <div class="d-flex align-items-center">
+                              <span class="chat__message__username"
+                                >Вася П.</span
+                              >
+                              <span class="chat__message__time">10:51</span>
+                            </div>
+                            <span class="chat__message__text">
+                              Задача организации, в особенности же сложившаяся
+                              структура организации требуют от нас анализа
+                              направлений прогрессивного развития.
+                            </span>
+                          </div>
+                        </div>
+                        <div class="chat__message">
+                          <div class="chat__message__img user-img">
+                            <img src="./../src/img/chat/user-3.svg" alt="" />
+                          </div>
+                          <div class="chat__message__info">
+                            <div class="d-flex align-items-center">
+                              <span class="chat__message__username">Wedo</span>
+                              <span class="chat__message__time">10:51</span>
+                            </div>
+                            <span class="chat__message__text">
+                              <img
+                                src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                                alt=""
+                              />
+                              <img
+                                src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                                alt=""
+                              />
+                              <img
+                                src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                                alt=""
+                              />
+                              <img
+                                src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat__meessage__send">
+                        <form action="">
+                          <div class="chat__message__action"></div>
+                          <div class="chat__send__grid">
+                            <label class="chat__send__img" for="send-img">
+                              <input
+                                class="visually-hidden"
+                                type="file"
+                                name=""
+                                id="send-img"
+                              />
+                              <i class="fas fa-camera"></i>
+                            </label>
+                            <textarea
+                              class="chat__send__field"
+                              placeholder="Напишите сообщение..."
+                              name=""
+                              id=""
+                            ></textarea>
+                            <button class="chat__send__btn btn-no-style">
+                              <img
+                                src="./../src/img/chat/paper-plane.svg"
+                                alt=""
+                              />
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal multiple-modals fade refuse-modal"
+          id="refuseModal"
+          role="dialog"
+          aria-labelledby="refuseModalTitle"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered"
+            id="registerContent"
+            role="document"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  clas
+                  type="button"
+                  class="btn-close btn-no-style"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="refuse-modal-title">
+                  Вы уверены что хотитетказаться от исполнителя?
+                </p>
+                <p class="refuse-modal-text">
+                  Вы сможете найти его в своем профиле. Заинтересованные
+                  специалисты будут откликаться на ваше задание.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <div class="d-flex align-items-center justify-content-center">
+                  <button class="btn-main mr-2" data-bs-dismiss="modal">
+                    Отменить
+                  </button>
+                  <button
+                    class="btn-basic border border-dark"
+                    data-bs-dismiss="modal"
+                    data-bs-target="#refused"
+                    data-bs-toggle="modal"
+                  >
+                    Отказаться
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal multiple-modals fade refuse-modal"
+          id="refused"
+          role="dialog"
+          aria-labelledby="refusedTitle"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered"
+            id="registerContent"
+            role="document"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  clas
+                  type="button"
+                  class="btn-close btn-no-style"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div
+                  class="
+                    d-flex
+                    align-items-center
+                    justify-content-center
+                    flex-column
+                  "
+                >
+                  <p class="refuse-modal-title mb-4">
+                    Вы отказались от исполнителя
+                  </p>
+                  <button class="btn-main mr-2" data-bs-dismiss="modal">
+                    Вернуться настраницу задания
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal multiple-modals fade g-modal complaint-form-modal"
+          id="complaintModal"
+          role="dialog"
+          aria-labelledby="complaintModalTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" id="" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  clas
+                  type="button"
+                  class="btn-close btn-no-style"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="complaint-form">
+                  <p class="complaint-form__title">Оставить жалобу</p>
+                  <form action="" method="POST">
+                    <div class="g-form-group">
+                      <label for="type" class="g-select__label"
+                        >Причина жалобы</label
+                      >
+                      <div class="g-select">
+                        <select name="" id="fraud">
+                          <option value="fraud">Мошенничесетво</option>
+                          <option value="2">lorem ipsum</option>
+                          <option value="2">dolor sit.</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="g-form-group">
+                      <textarea
+                        name=""
+                        class="g-textarea"
+                        placeholder="Оставьте сови комментарии"
+                      ></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button class="btn-no-style btn-cancel">Отменить</button>
+                      <button class="btn-main">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="success-alert visually-hidden">
+        <div class="success-alert__wrapper">
+          <button class="close-alert close">x</button>
+          <div class="success-alert__text">
+            <div>
+              <img src="./../src/img/icon/checkmark.png" alt="" />
+            </div>
+            <a href="">Profil səhifənizə keçid edə bilərsiniz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *********************    Components  End    ************************ -->
+    <!-- ******************************************************************** -->
+    <!--jquery-->
+    <!-- <script src="./../src/vendor/jquery/jquery.min.js"></script>
+   -->
+
+    <!--bootstrap-->
+    <script src="../src/vendor/bootstrap/bootstrap.bundle.min8128.js?v=fh8VA992XMpeCZiRuU4xii75UIG6KvHrbUF8yIS_2_4"></script>
+    <!-- owl carousel js -->
+    <script src="../src/vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="../src/vendor/nice-select/jquery.nice-select.min.js"></script>
+    <script src="../src/vendor/datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="../src/vendor/datepicker/bootstrap-datepicker.ru.min.js"></script>
+
+    <!--javascript-->
+
+    <script src="../src/js/main7422.js"></script>
+    <script src="../src/js/success-alert.js"></script>
+
+    <script src="../src/js/truncate.js"></script>
+    <script src="../src/js/select.js"></script>
+    <script src="../src/js/chat.js"></script>
+    <script src="../src/js/language-select.js"></script>
+    <script src="../src/js/notif-dropdown.js"></script>
+    <script src="../src/js/upload-file.js"></script>
+    <!--scripts end-->
+  </body>
+</html>
