@@ -6887,3 +6887,11 @@ header .mobile-menu {
 .h-48 {
     min-height: 48px;
 }
+
+.text-red {
+    color: #ed1c24;
+}
+
+.text-red:hover {
+    color: #ed1c23dc;
+}
