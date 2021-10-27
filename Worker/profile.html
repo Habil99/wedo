@@ -482,48 +482,133 @@
                 <button class="ml-3 btn-no-style btn-edit">Dəyiş</button>
               </div>
               <!-- <p class="p2">Hal Hazırda Görülən iş yoxdur</p> -->
-              <div class="work-types-wrapper">
-                <div class="work-types-heading">
-                  <p class="work-types-title">Фото, видео и аудио</p>
-                  <div class="work-types-widget">Выполнено 5 заданий</div>
+              <div class="work-types-cover">
+                <div class="work-types-wrapper">
+                  <div class="work-types-heading">
+                    <p class="work-types-title">Фото, видео и аудио</p>
+                    <div class="work-types-widget">Выполнено 5 заданий</div>
+                  </div>
+                  <div class="work-types-content">
+                    <ul class="work-types-list">
+                      <li class="work-types-list-item">Что-то другое <span>3 задание</span></li>
+                      <li class="work-types-list-item">Обработка фотографий <span>1 задание</span></li>
+                      <li class="work-types-list-item">Что-то другое <span>3 задание</span></li>
+                      <li class="work-types-list-item">Видеосъемка <span>5 задание</span></li>
+                      <li class="work-types-list-item">Видеосъемка <span>2 задание</span></li>
+                    </ul>
+                    <!-- <button class="btn-no-style btn-edit" show-more>Показать еще</button> -->
+                  </div>
                 </div>
-                <div class="work-types-content">
-                  <ul class="work-types-list">
-                    <li class="work-types-list-item">Что-то другое <span>3 задание</span></li>
-                    <li class="work-types-list-item">Обработка фотографий <span>1 задание</span></li>
-                    <li class="work-types-list-item">Что-то другое <span>3 задание</span></li>
-                    <li class="work-types-list-item">Видеосъемка <span>5 задание</span></li>
-                    <li class="work-types-list-item">Видеосъемка <span>2 задание</span></li>
-                  </ul>
-                  <!-- <button class="btn-no-style btn-edit" show-more>Показать еще</button> -->
+                <div class="work-types-wrapper">
+                  <div class="work-types-heading">
+                    <p class="work-types-title">Дизайн сайтов и приложений</p>
+                  </div>
+                  <div class="work-types-content">
+                    <ul class="work-types-list">
+                      <li class="work-types-list-item">Наружная реклама, стенды, pos-материалы</li>
+                      <li class="work-types-list-item">3d-графика, анимация</li>
+                      <li class="work-types-list-item">Дизайн сайтов и приложений</li>
+                      <li class="work-types-list-item">3d-графика, анимация</li>
+                      <li class="work-types-list-item">Дизайн сайтов и приложений</li>
+                      <li class="work-types-list-item">Наружная реклама, стенды, pos-материалы</li>
+                    </ul>
+                    <!-- <button class="btn-no-style btn-edit" show-more>Показать еще</button> -->
+                  </div>
+                </div>
+                <div class="work-types-wrapper">
+                  <div class="work-types-heading">
+                    <p class="work-types-title">Виртуальный помощник</p>
+                    <div class="work-types-widget">Выполнено 1 заданий</div>
+                  </div>
+                  <div class="work-types-content">
+                    <ul class="work-types-list">
+                      <li class="work-types-list-item">Работа с числовыми данными</li>
+                      <li class="work-types-list-item">Что-то другое</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="work-types-wrapper">
-                <div class="work-types-heading">
-                  <p class="work-types-title">Дизайн сайтов и приложений</p>
+              <div class="work-types-edit hidden">
+                <div class="category-wrapper">
+                  <div class="categories-heading">
+                      <p class="categories-heading-title">Категории</p>
+                      <button class="btn-no-style">Очистить</button>
+                  </div>
+                  <div class="g-checkbox">
+                      <input type="checkbox" class="visually-hidden g-checkbox__input"
+                          id="all-categories" data-control-all>
+                      <label class="g-checkbox__label" for="all-categories">Все
+                          категории</label>
+                  </div>
+                  <div class="category-list">
+                      <div class="g-checkbox toggle">
+                          <input type="checkbox" class="visually-hidden g-checkbox__input"
+                              id="услуги" data-category>
+                          <span class="chevron">
+                              <i class="fas fa-chevron-down"></i>
+                          </span>
+                          <label class="g-checkbox__label" for="услуги">Курьерские
+                              услуги</label>
+                      </div>
+
+                      <div class="category-list-sub visually-hidden">
+                          <div class="g-checkbox">
+                              <input type="checkbox"
+                                  class="visually-hidden g-checkbox__input" id="уборка" data-subcategory>
+                              <label class="g-checkbox__label" for="уборка">Поддерживающая
+                                  уборка</label>
+                          </div>
+                          <div class="g-checkbox">
+                              <input type="checkbox"
+                                  class="visually-hidden g-checkbox__input" id="Работы" data-subcategory>
+                              <label class="g-checkbox__label" for="Работы">Работы в саду,
+                                  огороде, на участке</label>
+                          </div>
+                          <div class="g-checkbox">
+                              <input type="checkbox"
+                                  class="visually-hidden g-checkbox__input"
+                                  id="Генеральная" data-subcategory>
+                              <label class="g-checkbox__label"
+                                  for="Генеральная">Генеральная уборка</label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="category-list">
+                      <div class="g-checkbox toggle">
+                          <input type="checkbox" class="visually-hidden g-checkbox__input"
+                              id="строительство" data-category>
+                          <span class="chevron">
+                              <i class="fas fa-chevron-down"></i>
+                          </span>
+                          <label class="g-checkbox__label" for="строительство">Ремонт и
+                              строительство</label>
+                      </div>
+                      <div class="category-list-sub visually-hidden">
+                          <div class="g-checkbox">
+                              <input type="checkbox"
+                                  class="visually-hidden g-checkbox__input" id="lorem-1" data-subcategory>
+                              <label class="g-checkbox__label" for="lorem-1">Lorem, ipsum.</label>
+                          </div>
+                          <div class="g-checkbox">
+                              <input type="checkbox"
+                                  class="visually-hidden g-checkbox__input" id="lorem-2" data-subcategory>
+                              <label class="g-checkbox__label" for="lorem-2">Lorem.</label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="category-list">
+                      <div class="g-checkbox">
+                          <input type="checkbox" class="visually-hidden g-checkbox__input"
+                              id="хозяйству" data-category>
+                          <label class="g-checkbox__label" for="хозяйству">Уборка и помощь
+                              по хозяйству</label>
+                      </div>
+                  </div>
+              
                 </div>
-                <div class="work-types-content">
-                  <ul class="work-types-list">
-                    <li class="work-types-list-item">Наружная реклама, стенды, pos-материалы</li>
-                    <li class="work-types-list-item">3d-графика, анимация</li>
-                    <li class="work-types-list-item">Дизайн сайтов и приложений</li>
-                    <li class="work-types-list-item">3d-графика, анимация</li>
-                    <li class="work-types-list-item">Дизайн сайтов и приложений</li>
-                    <li class="work-types-list-item">Наружная реклама, стенды, pos-материалы</li>
-                  </ul>
-                  <!-- <button class="btn-no-style btn-edit" show-more>Показать еще</button> -->
-                </div>
-              </div>
-              <div class="work-types-wrapper">
-                <div class="work-types-heading">
-                  <p class="work-types-title">Виртуальный помощник</p>
-                  <div class="work-types-widget">Выполнено 1 заданий</div>
-                </div>
-                <div class="work-types-content">
-                  <ul class="work-types-list">
-                    <li class="work-types-list-item">Работа с числовыми данными</li>
-                    <li class="work-types-list-item">Что-то другое</li>
-                  </ul>
+                <div class="d-flex align-items-center flex-wrap">
+                  <button class="btn-main mr-2 h-48 btn-save">Сохранить</button>
+                  <button class="btn-outlined h-48 btn-reject">Отменить</button>
                 </div>
               </div>
             </div>
@@ -1118,6 +1203,8 @@
   <script src="../src/js/show-more.js"></script>
 
   <script src="../src/js/upload-file.js"></script>
+  <script src="../src/js/categories.js"></script>
+  <script src="../src/js/profile-edit-work-types.js"></script>
 </body>
 
 </html>
